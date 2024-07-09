@@ -1,0 +1,140 @@
+@import './variable.scss';
+
+.navbar {
+    background-color: $white;
+    padding: 10px 20px;
+    display: flex;
+
+    .nav-brand-logo {
+        img {
+            width: 60px;
+            height: 40px;
+            border-radius: 50px;
+        }
+
+    }
+
+    .main-div-for-flex {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .LHS {
+
+            .navbar-nav {
+                // margin-left: 20px;
+                // padding: 0px 16px;
+            }
+
+
+            .search-bar {
+                display: flex;
+                align-items: center;
+                background-color: $lightgray;
+                width: 150px;
+                border-radius: 15px;
+                position: relative;
+                margin-left: 10px;
+
+                .input-search {
+                    width: 100%;
+                    padding: 4px;
+                    border-radius: 10px;
+                    box-shadow: none;
+                    border: none;
+                    background: transparent;
+                    text-align: center;
+
+                    &:focus-visible {
+                        border: none;
+                        box-shadow: none;
+                        outline: none;
+                    }
+
+
+                }
+
+                .search-icon {
+                    position: absolute;
+                    left: 11px;
+                    top: 10px;
+                }
+            }
+            .for-crypto-title {
+                color: $black;
+                font-weight: 600 !important;
+            }
+
+            .reward-link {
+                color: $lightgreen;
+                background-color: $lightshade;
+            }
+        }
+
+        .RHS {
+            .login-sigup {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                .nav-login-btn {
+                    color: $black;
+                    text-decoration: none;
+                    font-size: 18px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .nav-signup-btn {
+                    width: unset;
+                    padding: 9px 20px;
+                    border-radius: 90px;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 130%;
+                    text-align: center;
+                    color: $white;
+                    background: $black;
+                    text-decoration: none;
+                }
+
+                .download-icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .usd-icony {
+
+                .usd-icon {
+               
+                    border: none;
+                    color: $black;
+                    font-weight: 600;
+                    font-size: 14px;
+                    padding: 10px 10px;
+                    border-radius: 20px;
+    
+
+
+
+
+                }
+
+            }
+
+
+        }
+    }
+
+
+
+
+
+    .coinex-logo-img {
+        width: 150px;
+        height: 50px;
+    }
+}
