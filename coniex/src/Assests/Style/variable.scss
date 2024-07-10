@@ -1,8 +1,11 @@
-$white:#fff;
-$black:#000;
-$blue:#1e90ff;
-$lightgray: rgba(29, 29, 29, 0.04) ; 
-$rgb-black: rgb(29, 29, 29) ;
 
-$lightgreen: rgb(1, 188, 141);
-$lightshade: rgba(1, 188, 141, 0.08);
+:root {
+    --white:#fff;
+    --black:#000;
+    --blue:#1e90ff;
+    --lightgray: rgba(29, 29, 29, 0.04);
+    --rgb-black: rgb(29, 29, 29) ;
+    --lightgreen: rgb(1, 188, 141);
+    --lightshade: rgba(1, 188, 141, 0.08);
+    --lightbrown: rgba(29, 29, 29, 0.02);
+}

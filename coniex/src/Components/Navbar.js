@@ -12,6 +12,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import coinexLogo from '../Assests/Images/coinex.jpeg'
 import DownloadIcon from '@mui/icons-material/Download';
 import PublicIcon from '@mui/icons-material/Public';
+// site name and logo from dyanmic 
+import { siteLogo, siteName } from '../Config/Config';
 const Header = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
   const timeoutRef = useRef(null);
@@ -52,7 +54,7 @@ const Header = () => {
       <Container fluid>
         <Navbar expand="lg" className={`navbar mb-3 navbar-expand-lg  fixed-top ${scrollPosition === 0 && !isToggleClicked ? 'navbar-transparent' : 'navbar-black'}`}>
           <Navbar.Brand href="#" className='nav-brand-logo'>
-            <img src={coinexLogo } alt="" className='coinex-logo-img' />
+            <img src={siteLogo } alt="" className='coinex-logo-img' />
           </Navbar.Brand>
           <div className="main-div-for-flex">
             <div className="LHS">
@@ -159,7 +161,7 @@ const Header = () => {
             <div className="RHS">
               <div className="login-sigup">
                 <NavLink to='login' className='nav-login-btn' > Login</NavLink>
-                <NavLink to='login' className='nav-signup-btn' > Sign Up </NavLink>
+                <NavLink to='signup' className='nav-signup-btn' > Sign Up </NavLink>
                 <div className="download-icon">
                  <DownloadIcon/>
                 </div>

@@ -1,7 +1,7 @@
-@import './variable.scss';
+
 
 .navbar {
-    background-color: $white;
+    background-color: var(--white);
     padding: 10px 20px;
     display: flex;
 
@@ -30,7 +30,7 @@
             .search-bar {
                 display: flex;
                 align-items: center;
-                background-color: $lightgray;
+                background-color: var(--lightgray);
                 width: 150px;
                 border-radius: 15px;
                 position: relative;
@@ -44,6 +44,8 @@
                     border: none;
                     background: transparent;
                     text-align: center;
+                    padding-left: 35px;
+                    padding-right: 10px;
 
                     &:focus-visible {
                         border: none;
@@ -61,13 +63,14 @@
                 }
             }
             .for-crypto-title {
-                color: $black;
+                color: var(--black);
                 font-weight: 600 !important;
             }
 
             .reward-link {
-                color: $lightgreen;
-                background-color: $lightshade;
+                color: var(--lightgreen);
+                background-color: var(--lightshade) ;
+                border-radius: 10px;
             }
         }
 
@@ -78,7 +81,7 @@
                 gap: 12px;
 
                 .nav-login-btn {
-                    color: $black;
+                    color: var(--black);
                     text-decoration: none;
                     font-size: 18px;
                     display: flex;
@@ -94,8 +97,8 @@
                     font-size: 14px;
                     line-height: 130%;
                     text-align: center;
-                    color: $white;
-                    background: $black;
+                    color: var(--white);
+                    background: var(--black);
                     text-decoration: none;
                 }
 
@@ -111,7 +114,7 @@
                 .usd-icon {
                
                     border: none;
-                    color: $black;
+                    color: var(--black);
                     font-weight: 600;
                     font-size: 14px;
                     padding: 10px 10px;
