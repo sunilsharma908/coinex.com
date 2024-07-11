@@ -1,0 +1,126 @@
+.img-slider {
+    background-color: var(--lightgreen);
+    padding-top: 25px;
+    padding-bottom: 40px;
+    position: relative;
+
+    .swiper {
+        position: unset;
+    }
+
+    .swiper-slide {
+        img {
+            width: 400px;
+            height: 152px;
+            border-radius: 10px;
+        }
+
+    }
+
+    .swiper-pagination {
+
+        bottom: 0;
+    }
+
+    .swiper-pagination-bullet {
+        border-radius: 4px;
+        height: 4px;
+        width: 20px;
+        background-color: var(--white);
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: var(--lightgreen);
+    }
+
+    .swiper-button-prev {
+        &:hover {
+            &::after {
+                background: var(--white) !important;
+            }
+        }
+
+        left: 230px;
+
+        &::after {
+
+            background: var(--lightgreen);
+            color: var(---black);
+            border-radius: 50%;
+            font-size: 20px;
+            font-weight: 600;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px;
+        }
+    }
+
+    .swiper-button-next {
+        right: 230px;
+
+        &:hover {
+            &::after {
+                background: var(--white) !important;
+            }
+        }
+
+        &::after {
+            background: var(--lightgreen);
+            color: var(---black);
+            border-radius: 50%;
+            font-size: 20px;
+            font-weight: 600;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px;
+        }
+    }
+}
+
+.anouncement {
+    padding-top: 30px;
+    background-color: var(--lightgreen);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .announce-txt {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        p {
+            color: var(--white);
+            font-size: 14px;
+        }
+
+        span {
+            color: var(---black);
+            font-size: 14px;
+        }
+    }
+
+    .more-link {
+        .more-link-1 {
+            color: var(--lightgreen);
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+
+            svg {
+                font-size: 15px;
+            }
+        }
+
+    }
+}

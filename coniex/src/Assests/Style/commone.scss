@@ -18,3 +18,15 @@ a.dropdown-toggle.nav-link {
     color: black !important;
 }
 
+
+
+
+@media(max-width:1400px) {
+
+    html,
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden !important;
+    }
+}
