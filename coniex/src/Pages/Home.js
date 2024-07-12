@@ -24,6 +24,8 @@ import android from '../Assests/Images/android.png';
 import Accordion from 'react-bootstrap/Accordion';
 import { Slider } from '@mui/material';
 import ImageSlider from '../Components/ImageSlider';
+import signupImg from '../Assests/Images/register-bg.03006533.svg';
+import ImageMarquee from '../Components/ImageMarquee';
 export default function Home() {
 
     // for counter 
@@ -60,100 +62,100 @@ export default function Home() {
         <>
             { /* ----------------- banner section start  ----------------- */}
             <div className="banner-section-main-div">
-            <div className='main-home'>
-                
-                <Container>
-                    <Row>
-                        <Col lg={6}>
-                            <div className="banner-sec">
-                                <div className="coinex-heading">
-                                    <h1> Find the Next <br />
+                <div className='main-home'>
 
-                                        <span className='spefic-content'> Crypto Gem</span> on {siteName}
-                                    </h1>
-                                    <p className='coinex-heading-des'>
-                                        1 Out of 4 Crypto Holders Worldwide Is with {siteName}
-                                    </p>
+                    <Container>
+                        <Row>
+                            <Col lg={6}>
+                                <div className="banner-sec">
+                                    <div className="coinex-heading">
+                                        <h1> Find the Next <br />
+
+                                            <span className='spefic-content'> Crypto Gem</span> on {siteName}
+                                        </h1>
+                                        <p className='coinex-heading-des'>
+                                            1 Out of 4 Crypto Holders Worldwide Is with {siteName}
+                                        </p>
+                                    </div>
+                                    <div className="email-form">
+                                        <form action="">
+                                            <div className="input-field">
+                                                <input type="text" placeholder='Email/ Phone Number' className='form-control' />
+                                                <button className='sign-up-btn'> Sign Up Now <EastIcon /> </button>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
-                                <div className="email-form">
-                                    <form action="">
-                                        <div className="input-field">
-                                            <input type="text" placeholder='Email/ Phone Number' className='form-control' />
-                                            <button className='sign-up-btn'> Sign Up Now <EastIcon /> </button>
+
+
+                            </Col>
+                            <Col lg={6}>
+                                <div className="banner-sec-right">
+                                    <div className="banner-sec-right-img">
+                                        <img src={bannerRightImg} alt="" />
+                                    </div>
+                                    <div className="qr-code-sec">
+                                        <div className="qr-des-top">
+                                            <p> Scan QR Code to Download App </p>
                                         </div>
-                                    </form>
+                                        <div className="qr-code-scn">
+                                            <QRCodeSVG value="https://reactjs.org/" height="210" width="211" />,
+                                        </div>
+                                        <div className="qr-des-bottom">
+                                            <Link to='/'>View More <EastIcon className='right-icon' /> </Link>
+                                        </div>
+                                    </div>
                                 </div>
+                            </Col>
+                            <div className="for-static-slider">
+                                <Row>
+                                    <Col lg={3}>
+                                        <div className="s-slider-main">
+                                            <div className="s-slider-heading">
+                                                <h2 id="count1">0</h2>
+                                            </div>
+                                            <div className="s-slider-des">
+                                                <p>Countries Covered</p>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                    <Col lg={3}>
+                                        <div className="s-slider-main">
+                                            <div className="s-slider-heading">
+                                                <h2 id="count2">0</h2>
+                                            </div>
+                                            <div className="s-slider-des">
+                                                <p>Countries Covered</p>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                    <Col lg={3}>
+                                        <div className="s-slider-main">
+                                            <div className="s-slider-heading">
+                                                <h2 id="count3">0</h2>
+                                            </div>
+                                            <div className="s-slider-des">
+                                                <p>Countries Covered</p>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                    <Col lg={3}>
+                                        <div className="s-slider-main">
+                                            <div className="s-slider-heading">
+                                                <h2 id="count4">0</h2>
+                                            </div>
+                                            <div className="s-slider-des">
+                                                <p>Revenue Generated</p>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                </Row>
                             </div>
-
-
-                        </Col>
-                        <Col lg={6}>
-                            <div className="banner-sec-right">
-                                <div className="banner-sec-right-img">
-                                    <img src={bannerRightImg} alt="" />
-                                </div>
-                                <div className="qr-code-sec">
-                                    <div className="qr-des-top">
-                                        <p> Scan QR Code to Download App </p>
-                                    </div>
-                                    <div className="qr-code-scn">
-                                        <QRCodeSVG value="https://reactjs.org/" height="210" width="211" />,
-                                    </div>
-                                    <div className="qr-des-bottom">
-                                        <Link to='/'>View More <EastIcon className='right-icon' /> </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </Col>
-                        <div className="for-static-slider">
-                            <Row>
-                                <Col lg={3}>
-                                    <div className="s-slider-main">
-                                        <div className="s-slider-heading">
-                                            <h2 id="count1">0</h2>
-                                        </div>
-                                        <div className="s-slider-des">
-                                            <p>Countries Covered</p>
-                                        </div>
-                                    </div>
-                                </Col>
-                                <Col lg={3}>
-                                    <div className="s-slider-main">
-                                        <div className="s-slider-heading">
-                                            <h2 id="count2">0</h2>
-                                        </div>
-                                        <div className="s-slider-des">
-                                            <p>Countries Covered</p>
-                                        </div>
-                                    </div>
-                                </Col>
-                                <Col lg={3}>
-                                    <div className="s-slider-main">
-                                        <div className="s-slider-heading">
-                                            <h2 id="count3">0</h2>
-                                        </div>
-                                        <div className="s-slider-des">
-                                            <p>Countries Covered</p>
-                                        </div>
-                                    </div>
-                                </Col>
-                                <Col lg={3}>
-                                    <div className="s-slider-main">
-                                        <div className="s-slider-heading">
-                                            <h2 id="count4">0</h2>
-                                        </div>
-                                        <div className="s-slider-des">
-                                            <p>Revenue Generated</p>
-                                        </div>
-                                    </div>
-                                </Col>
-                            </Row>
-                        </div>
-                    </Row>
-                </Container>
+                        </Row>
+                    </Container>
+                </div>
             </div>
-            </div>
-        
+
 
 
             {/* <ImageSlider/> */}
@@ -750,81 +752,136 @@ export default function Home() {
 
             { /* ----------------- Safe and trusted section start    ----------------- */}
             <div className="safe-trusted-main-section">
-            <div className="safe-trusted">
+                <div className="safe-trusted">
+                    <Container>
+                        <div className="safe-sec-heading">
+                            <h1>Your Safe and Trusted Crypto Exchange</h1>
+                        </div>
+                        <div className="safe-learn-more">
+                            <button className='safe-learn-more'> Learn More </button>
+                        </div>
+
+                        <Row>
+                            <Col lg={3}>
+
+                                <div className="safe-cards">
+                                    <div className="s-card">
+                                        <div className="s-card-img">
+                                            <img src={safe} alt="" className='img-fluid' />
+                                        </div>
+                                        <div className="s-card-tite">
+                                            <h5> Secure Asset Storage</h5>
+                                        </div>
+                                        <div className="s-card-des">
+                                            <p> Our industry-leading encryption and storage systems ensure that your assets are always safe and secure.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </Col>
+                            <Col lg={3}>
+
+                                <div className="safe-cards">
+                                    <div className="s-card">
+                                        <div className="s-card-img">
+                                            <img src={security1} alt="" className='img-fluid' />
+                                        </div>
+                                        <div className="s-card-tite">
+                                            <h5> Secure Asset Storage</h5>
+                                        </div>
+                                        <div className="s-card-des">
+                                            <p> Our industry-leading encryption and storage systems ensure that your assets are always safe and secure.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </Col>
+                            <Col lg={3}>
+
+                                <div className="safe-cards">
+                                    <div className="s-card">
+                                        <div className="s-card-img">
+                                            <img src={Security2} alt="" className='img-fluid' />
+                                        </div>
+                                        <div className="s-card-tite">
+                                            <h5> Secure Asset Storage</h5>
+                                        </div>
+                                        <div className="s-card-des">
+                                            <p> Our industry-leading encryption and storage systems ensure that your assets are always safe and secure.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </Col>
+                            <Col lg={3}>
+
+                                <div className="safe-cards">
+                                    <div className="s-card">
+                                        <div className="s-card-img">
+                                            <img src={security3} alt="" className='img-fluid' />
+                                        </div>
+                                        <div className="s-card-tite">
+                                            <h5> Secure Asset Storage</h5>
+                                        </div>
+                                        <div className="s-card-des">
+                                            <p> Our industry-leading encryption and storage systems ensure that your assets are always safe and secure.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
+
+                </div>
+
+            </div>
+
+            { /* ----------------- Safe and trusted section end     ----------------- */}
+
+            { /* ----------------- Safe and trusted Digital Investement      ----------------- */}
+            <div className="digital-investment">
                 <Container>
-                    <div className="safe-sec-heading">
-                        <h1>Your Safe and Trusted Crypto Exchange</h1>
-                    </div>
-                    <div className="safe-learn-more">
-                        <button className='safe-learn-more'> Learn More </button>
-                    </div>
-
                     <Row>
-                        <Col lg={3}>
+                        <Col lg={6}>
+                            <div className="digttal-heading">
+                                <h2> Make Digital Investment with Ease.</h2>
+                                <p className='digital-des'>
+                                    The Future of cryptocurrency exchange is here with Toobit. Instant access, simplified. Trading smoothly, amplified.
+                                </p>
+                            </div>
+                            <div className="digital-scan-code">
+                                <div className="scanner-img">
+                                    <img src={qrcode} alt="" />
 
-                            <div className="safe-cards">
-                                <div className="s-card">
-                                    <div className="s-card-img">
-                                        <img src={safe} alt="" className='img-fluid' />
-                                    </div>
-                                    <div className="s-card-tite">
-                                        <h5> Secure Asset Storage</h5>
-                                    </div>
-                                    <div className="s-card-des">
-                                        <p> Our industry-leading encryption and storage systems ensure that your assets are always safe and secure.</p>
-                                    </div>
+                                </div>
+                                <div className="scanner-content">
+                                    <p> Scan to Download </p>
+                                    <p> iOS & Android </p>
                                 </div>
 
                             </div>
-                        </Col>
-                        <Col lg={3}>
 
-                            <div className="safe-cards">
-                                <div className="s-card">
-                                    <div className="s-card-img">
-                                        <img src={security1} alt="" className='img-fluid' />
-                                    </div>
-                                    <div className="s-card-tite">
-                                        <h5> Secure Asset Storage</h5>
-                                    </div>
-                                    <div className="s-card-des">
-                                        <p> Our industry-leading encryption and storage systems ensure that your assets are always safe and secure.</p>
-                                    </div>
+                            <div className="digital-media-app d-flex">
+                                <div className="d-app">
+                                    <p> <span> <img src={appstore} alt="" /> </span> App Store </p>
                                 </div>
-
+                                <div className="d-app">
+                                    <p> <span> <img src={playstore} alt="" /> </span> Google play  </p>
+                                </div>
+                                <div className="d-app">
+                                    <p> <span> <img src={android} alt="" /></span> APK </p>
+                                </div>
+                                <div className="d-app">
+                                    <p> <span> <img src={api} alt="" /></span> API </p>
+                                </div>
                             </div>
+
+
                         </Col>
-                        <Col lg={3}>
-
-                            <div className="safe-cards">
-                                <div className="s-card">
-                                    <div className="s-card-img">
-                                        <img src={Security2} alt="" className='img-fluid' />
-                                    </div>
-                                    <div className="s-card-tite">
-                                        <h5> Secure Asset Storage</h5>
-                                    </div>
-                                    <div className="s-card-des">
-                                        <p> Our industry-leading encryption and storage systems ensure that your assets are always safe and secure.</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </Col>
-                        <Col lg={3}>
-
-                            <div className="safe-cards">
-                                <div className="s-card">
-                                    <div className="s-card-img">
-                                        <img src={security3} alt="" className='img-fluid' />
-                                    </div>
-                                    <div className="s-card-tite">
-                                        <h5> Secure Asset Storage</h5>
-                                    </div>
-                                    <div className="s-card-des">
-                                        <p> Our industry-leading encryption and storage systems ensure that your assets are always safe and secure.</p>
-                                    </div>
-                                </div>
+                        <Col lg={6}>
+                            <div className="rhs-digital-img">
+                                <img src={trading} alt="" className='img-fluid' />
 
                             </div>
                         </Col>
@@ -833,113 +890,112 @@ export default function Home() {
 
             </div>
 
-            </div>
-        
-            { /* ----------------- Safe and trusted section end     ----------------- */}
-
-            { /* ----------------- Safe and trusted Digital Investement      ----------------- */}
-            <div className="digital-investment">
-            <Container>
-                <Row>
-                    <Col lg={6}>
-                        <div className="digttal-heading">
-                            <h2> Make Digital Investment with Ease.</h2>
-                            <p className='digital-des'>
-                                The Future of cryptocurrency exchange is here with Toobit. Instant access, simplified. Trading smoothly, amplified.
-                            </p>
-                        </div>
-                        <div className="digital-scan-code">
-                            <div className="scanner-img">
-                                <img src={qrcode} alt="" />
-
-                            </div>
-                            <div className="scanner-content">
-                                <p> Scan to Download </p>
-                                <p> iOS & Android </p>
-                            </div>
-
-                        </div>
-
-                        <div className="digital-media-app d-flex">
-                            <div className="d-app">
-                                <p> <span> <img src={appstore} alt="" /> </span> App Store </p>
-                            </div>
-                            <div className="d-app">
-                                <p> <span> <img src={playstore} alt="" /> </span> Google play  </p>
-                            </div>
-                            <div className="d-app">
-                                <p> <span> <img src={android} alt="" /></span> APK </p>
-                            </div>
-                            <div className="d-app">
-                                <p> <span> <img src={api} alt="" /></span> API </p>
-                            </div>
-                        </div>
-
-
-                    </Col>
-                    <Col lg={6}>
-                    <div className="rhs-digital-img">
-                        <img src={trading} alt="" className='img-fluid' />
-
-                    </div>
-                    </Col>
-                </Row>
-            </Container>
-
-            </div>
-        
             { /* ----------------- Safe and trusted Digital Investement     ----------------- */}
 
-                    
+
             { /* ----------------- Accordian-section-starts     ----------------- */}
             <section className='accordian-section'>
-          <Container>
-            <Row>
-              <Col>
-                <div className="accordian-main" data-aos="fade-up">
-                  <div className="accordian-heading">
-                    <h1>Frequently Asked questions </h1>
-                  </div>
-                  <div className="accordians">
-                    <Accordion defaultActiveKey="0">
-                      <Accordion.Item eventKey="0" className='accor-item'>
-                        <Accordion.Header>What is blockChain technology?</Accordion.Header>
-                        <Accordion.Body >
-                          It's very simple! Register here. In your personal account, create a wallet where you can store your FOX tokens. Then just send any amount to the displayed address in your office.
-                        </Accordion.Body>
-                      </Accordion.Item>
-                      <Accordion.Item eventKey="1" className='accor-item'>
-                        <Accordion.Header> How its work ?</Accordion.Header>
-                        <Accordion.Body id="accordian-body">
-                          It's very simple! Register here. In your personal account, create a wallet where you can store your FOX tokens. Then just send any amount to the displayed address in your office.
-                        </Accordion.Body>
-                      </Accordion.Item>
-                      <Accordion.Item eventKey="3" className='accor-item'>
-                        <Accordion.Header>Who created bitcoin ?</Accordion.Header>
-                        <Accordion.Body>
-                          It's very simple! Register here. In your personal account, create a wallet where you can store your FOX tokens. Then just send any amount to the displayed address in your office.
-                        </Accordion.Body>
-                      </Accordion.Item>
-                      <Accordion.Item eventKey="4" className='accor-item'>
-                        <Accordion.Header>How does cryptocurrency works ? </Accordion.Header>
-                        <Accordion.Body>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                          aliquip ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                          culpa qui officia deserunt mollit anim id est laborum.
-                        </Accordion.Body>
-                      </Accordion.Item>
-                    </Accordion>
-                  </div>
-                </div>
-              </Col>
-            </Row>
-          </Container>
-        </section>
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className="accordian-main" data-aos="fade-up">
+                                <div className="accordian-heading">
+                                    <h1>Frequently Asked questions </h1>
+                                </div>
+                                <div className="accordians">
+                                    <Accordion defaultActiveKey="0">
+                                        <Accordion.Item eventKey="0" className='accor-item'>
+                                            <Accordion.Header>What is cryptocurrency and how does it work?</Accordion.Header>
+                                            <Accordion.Body >
+                                                Cryptocurrency, also known as digital currency or virtual money, is a type of digital or electronic currency that operates on decentralized networks using blockchain technology. The operation of cryptocurrencies, including how transactions are conducted and verified, is based on a technology called blockchain. Here are a simplified explanation of how cryptocurrencies work: Blockchain Technology, Cryptographic Security, Transactions, Consensus Mechanism, Decentralization, and Mining Rewar
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="1" className='accor-item'>
+                                            <Accordion.Header> What products does Toobit provide?</Accordion.Header>
+                                            <Accordion.Body id="accordian-body">
+                                                Toobit is the world's leading cryptocurrency exchange, catering to more than 1 million registered users. With low fees and over 100 cryptocurrencies to trade, Toobit is the preferred exchange to trade Bitcoin, Ethereum, and other virtual assets. With Toobit users can: Trade hundreds of cryptocurrencies on Spot, Futures, and Copy Trading markets and buy exclusive hot tokens in advance with Speedzone.
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="3" className='accor-item'>
+                                            <Accordion.Header>How to buy Bitcoin on Toobit?</Accordion.Header>
+                                            <Accordion.Body>
+                                                You can buy Bitcoin on Toobit with a credit, debit card, or USDT. Read our guide on How to Buy Crypto on Toobit for more information.
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="4" className='accor-item'>
+                                            <Accordion.Header>How does cryptocurrency works ? </Accordion.Header>
+                                            <Accordion.Body>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                                culpa qui officia deserunt mollit anim id est laborum.
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="5" className='accor-item'>
+                                            <Accordion.Header>How to invest in cryptocurrency? </Accordion.Header>
+                                            <Accordion.Body>
+                                                You can buy Bitcoin on Toobit with a credit, debit card, or USDT. Read our guide on How to Buy Crypto on Toobit for more information.
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="6" className='accor-item'>
+                                            <Accordion.Header>How to invest in cryptocurrency? </Accordion.Header>
+                                            <Accordion.Body>
+                                                You can buy Bitcoin on Toobit with a credit, debit card, or USDT. Read our guide on How to Buy Crypto on Toobit for more information.
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
             { /* ----------------- Accordian-section-end     ----------------- */}
+
+            { /* ----------------- Welcome Bonous section starts     ----------------- */}
+            <div className="welcome-bonous-main">
+                <Container>
+                    <Row>
+                        <Col lg={4}>
+                            <div className="welcome-bonous-image">
+                                <img src={signupImg} alt="" />
+                            </div>
+
+                        </Col>
+
+                        <Col lg={8}>
+                            <div className="wel-bonous-content">
+                                <div className="wel-bon-title">
+                                    <h1> Register now and claim your welcome <br /> bonus right away!</h1>
+                                </div>
+                                <div className="wel-bon-des">
+                                    <p> Still wondering where to start with your crypto journey?</p>
+                                </div>
+                                <div className="bonous-signup-btn">
+                                    <button className='b-signup-btn'> Sign Up <EastIcon className='east-icon' />  </button>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+
+            </div>
+            { /* ----------------- Welcome Bonous section ends      ----------------- */}
+            { /* ----------------- Image Marquee starts       ----------------- */}
+            <div className="marquee-section">
+            <Container fluid>
+            <ImageMarquee />
+
+            </Container>
+            </div>
+        
+            { /* ----------------- Image Marquee ends       ----------------- */}
+
+
+
 
 
 

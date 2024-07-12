@@ -1,0 +1,39 @@
+.marquee-container {
+    display: flex;
+    align-items: center;
+    height: 100px; // Adjust height as needed
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .logo-list {
+    display: flex;
+    align-items: center;
+    animation: scroll 30s linear infinite;
+  }
+  
+  .logo-item {
+    padding-right: 48px; // Adjust spacing as needed
+    &:hover {
+        animation-play-state: paused;
+    }
+  }
+
+  .logo-item:hover {
+    animation-play-state: paused;
+  }
+  
+  .logo-item img {
+    height: 100%; // Adjust height as needed
+    cursor: pointer;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
