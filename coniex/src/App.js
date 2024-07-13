@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
+import NotFound from './Pages/NotFound';
 
 
 function App() {
@@ -28,7 +29,9 @@ function App() {
           <Route element={<WebsiteLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            
           </Route>
+          {/* <Route path="*" element={<NotFound />} /> */}
 
         </Routes>
       </BrowserRouter>

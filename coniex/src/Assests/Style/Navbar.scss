@@ -18,12 +18,25 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        @media (max-width:1200px) {
+            width: auto;
+
+        }
 
         .LHS {
+         
+            
+      
 
             .navbar-nav {
                 // margin-left: 20px;
                 // padding: 0px 16px;
+            }
+            .market-link {
+                color: #000;
+                text-decoration: none;
+                font-weight: 500;
+                padding: 7px 2px 0 2px;
             }
 
 
@@ -62,9 +75,46 @@
                     top: 10px;
                 }
             }
-            .for-crypto-title {
+            .for-title {
                 color: var(--black);
                 font-weight: 600 !important;
+                .d-menu-link {
+                    display: flex;
+                    gap: 10px;
+ 
+                    padding: 5px 10px;
+                    border-radius: 20px !important;
+                    .d-m-img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    .d-m-content {
+                        .d-c-title {
+                            p {
+                                font-size: 14px;
+                                font-weight: 600;
+                                margin: 0;
+                            }
+                          
+                        }
+                        .d-c-des {
+                            p {
+                                font-size: 12px;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+                .dropdown-item {
+                    border-radius: 20px;
+                    padding-top: 10px;
+
+                }
+         
+            }
+            .dropdown-menu.show {
+                padding: 26px 10px;
+                border-radius: 20px;
             }
 
             .reward-link {
@@ -126,6 +176,17 @@
 
                 }
 
+            }
+
+            .rhs-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                @media (max-width:1200px) {
+                    display: none;
+                }
             }
 
 

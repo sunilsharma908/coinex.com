@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, } from 'react-bootstrap'
 import EastIcon from '@mui/icons-material/East';
 import bannerRightImg from '../Assests/Images/bgIMG.png'
@@ -9,7 +9,7 @@ import tableImg from '../Assests/Images/tableimg.png';
 import cryptoImg from '../Assests/Images/cryptoImg.png';
 import { Earbuds, East } from '@mui/icons-material';
 import { Link, NavLink } from 'react-router-dom';
-import { siteName } from '../Config/Config';
+import { siteName, siteLogo } from '../Config/Config';
 import productImg from '../Assests/Images/productImg.png';
 import safe from '../Assests/Images/safe.png';
 import security1 from '../Assests/Images/security.png';
@@ -26,9 +26,32 @@ import { Slider } from '@mui/material';
 import ImageSlider from '../Components/ImageSlider';
 import signupImg from '../Assests/Images/register-bg.03006533.svg';
 import ImageMarquee from '../Components/ImageMarquee';
+
+
 export default function Home() {
 
     // for counter 
+    const initialTime = 25 * 3600 + 4 * 60 + 41; // Initial time in seconds (25h 04m 41s)
+    const [timeLeft, setTimeLeft] = useState(initialTime);
+
+    useEffect(() => {
+        if (timeLeft <= 0) return;
+
+        const timerId = setInterval(() => {
+            setTimeLeft(timeLeft - 1);
+        }, 1000);
+
+        return () => clearInterval(timerId);
+    }, [timeLeft]);
+
+    const formatTime = (time) => {
+        const hours = Math.floor(time / 3600);
+        const minutes = Math.floor((time % 3600) / 60);
+        const seconds = time % 60;
+        return { hours, minutes, seconds };
+    };
+
+    const { hours, minutes, seconds } = formatTime(timeLeft);
 
     useEffect(() => {
         const countUpOptions = {
@@ -38,7 +61,7 @@ export default function Home() {
 
         const counters = [
             new CountUp('count1', 200, countUpOptions),
-            new CountUp('count2', 200, countUpOptions),
+            new CountUp('count2', 30, '30 Million', countUpOptions),
             new CountUp('count3', 200, countUpOptions),
             new CountUp('count4', 1530, countUpOptions) // $1.53 Billion
         ];
@@ -100,6 +123,9 @@ export default function Home() {
                                         </div>
                                         <div className="qr-code-scn">
                                             <QRCodeSVG value="https://reactjs.org/" height="210" width="211" />,
+                                            <div className="home-site-logo">
+                                                <img src={siteLogo} alt="" />
+                                            </div>
                                         </div>
                                         <div className="qr-des-bottom">
                                             <Link to='/'>View More <EastIcon className='right-icon' /> </Link>
@@ -109,8 +135,8 @@ export default function Home() {
                             </Col>
                             <div className="for-static-slider">
                                 <Row>
-                                    <Col lg={3}>
-                                        <div className="s-slider-main">
+                                    <Col lg={3} md={6}>
+                                        <div className="s-slider-main b-left ">
                                             <div className="s-slider-heading">
                                                 <h2 id="count1">0</h2>
                                             </div>
@@ -119,33 +145,35 @@ export default function Home() {
                                             </div>
                                         </div>
                                     </Col>
-                                    <Col lg={3}>
+                                    <Col lg={3} md={6}>
                                         <div className="s-slider-main">
                                             <div className="s-slider-heading">
                                                 <h2 id="count2">0</h2>
                                             </div>
                                             <div className="s-slider-des">
-                                                <p>Countries Covered</p>
+                                                <p>
+                                                    Global Investors</p>
                                             </div>
                                         </div>
                                     </Col>
-                                    <Col lg={3}>
+                                    <Col lg={3} md={6}>
                                         <div className="s-slider-main">
                                             <div className="s-slider-heading">
                                                 <h2 id="count3">0</h2>
                                             </div>
                                             <div className="s-slider-des">
-                                                <p>Countries Covered</p>
+                                                <p>Coins</p>
                                             </div>
                                         </div>
                                     </Col>
-                                    <Col lg={3}>
+                                    <Col lg={3} md={6}>
                                         <div className="s-slider-main">
                                             <div className="s-slider-heading">
                                                 <h2 id="count4">0</h2>
                                             </div>
                                             <div className="s-slider-des">
-                                                <p>Revenue Generated</p>
+                                                <p>
+                                                24h Trading Volume</p>
                                             </div>
                                         </div>
                                     </Col>
@@ -169,7 +197,7 @@ export default function Home() {
                         <h1> Crypto Market Today </h1>
                         <Link> View all 700+ Coins <EastIcon /></Link>
                     </div>
-                    <div className="market-time-sec">
+                    {/* <div className="market-time-sec">
                         <div className="m-t-logo">
                             <div className="mt-img">
                                 <img src={time} alt="" className='img-fluid' />
@@ -203,9 +231,45 @@ export default function Home() {
                         <div className="market-subscribe">
                             <button className='ms-btn'>Subscribe  <EastIcon />  </button>
                         </div>
+                    </div> */}
+                    <div className="market-time-sec">
+                        <div className="m-t-logo">
+                            <div className="mt-img">
+                                <img src={time} alt="" className='img-fluid' />
+                            </div>
+                            <div className="mt-logo-content">
+                                <div className="mt-logo-top">
+                                    <h5> XR</h5>
+                                    <span className='market-listing-btn'> New Listing </span>
+                                </div>
+                                <div className="mt-logo-bottom">
+                                    <h3> XRADERS </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="downgrading-clock">
+                            <div className="clock-d-main">
+                                <div className="d-hour-box d-time-box">
+                                    {hours}h
+                                </div>
+                                <p className='dot'>:</p>
+
+                                <div className="d-time-clock d-time-box">
+                                    {minutes}m
+                                </div>
+                                <p className='dot'>:</p>
+                                <div className="d-sec-clock d-time-box">
+                                    {seconds}s
+                                </div>
+                            </div>
+                        </div>
+                        <div className="market-subscribe">
+                            <button className='ms-btn'>Subscribe <EastIcon /></button>
+                        </div>
                     </div>
                     <Row>
-                        <Col lg={4}>
+                        <Col lg={4} md={6}>
 
                             <div className="market-table-lists">
                                 <div className="table-list-name">
@@ -335,7 +399,7 @@ export default function Home() {
                             </div>
 
                         </Col>
-                        <Col lg={4}>
+                        <Col lg={4} md={6}>
 
                             <div className="market-table-lists">
                                 <div className="table-list-name">
@@ -465,7 +529,7 @@ export default function Home() {
                             </div>
 
                         </Col>
-                        <Col lg={4}>
+                        <Col lg={4} md={6}>
 
                             <div className="market-table-lists">
                                 <div className="table-list-name">
@@ -648,7 +712,7 @@ export default function Home() {
                         </div>
                         <div className="product-service-cards">
                             <Row>
-                                <Col lg={6}>
+                                <Col xl={6}>
                                     <div className="pro-ser-box">
                                         <div className="pro-ser-heading">
                                             <h2> Spot Trading </h2>
@@ -663,7 +727,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col lg={6}>
+                                <Col xl={6}>
                                     <div className="pro-ser-box">
                                         <div className="pro-ser-heading">
                                             <h2> Buy Crypto  </h2>
@@ -678,7 +742,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col lg={6}>
+                                <Col xl={6}>
                                     <div className="pro-ser-box">
                                         <div className="pro-ser-heading">
                                             <h2> Crypto Derivative  </h2>
@@ -693,7 +757,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col lg={6}>
+                                <Col xl={6}>
                                     <div className="pro-ser-box">
                                         <div className="pro-ser-heading">
                                             <h2> {siteName} Earn  </h2>
@@ -708,7 +772,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col lg={6}>
+                                <Col xl={6}>
                                     <div className="pro-ser-box">
                                         <div className="pro-ser-heading">
                                             <h2> Trading Bot </h2>
@@ -723,7 +787,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col lg={6}>
+                                <Col xl={6}>
                                     <div className="pro-ser-box">
                                         <div className="pro-ser-heading">
                                             <h2> Margin Trading </h2>
@@ -986,12 +1050,12 @@ export default function Home() {
             { /* ----------------- Welcome Bonous section ends      ----------------- */}
             { /* ----------------- Image Marquee starts       ----------------- */}
             <div className="marquee-section">
-            <Container fluid>
-            <ImageMarquee />
+                <Container fluid>
+                    <ImageMarquee />
 
-            </Container>
+                </Container>
             </div>
-        
+
             { /* ----------------- Image Marquee ends       ----------------- */}
 
 

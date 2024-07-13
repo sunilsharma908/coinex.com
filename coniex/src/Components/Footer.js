@@ -1,173 +1,31 @@
-
-
-
-
-// import React from 'react';
-// import { Container, Row, Col } from 'react-bootstrap';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import coinexLogo from '../Assests/Images/coinex.jpeg';
-// import withoubg from '../Assests/Images/withoubg-removebg-preview.png';
-
-
-
-// const Footer = () => {
-//   return (
-//     <footer className="footer">
-    
-//       <Container>
-//       <div className="footer-title">
-//         <img src={withoubg} alt="" className='img-fluid' />
-//       </div>
-//         <Row>
-//           <Col md={2} className="footer-section">
-//             <h5 className="footer-heading">Corporate</h5>
-//             <ul className="footer-list">
-//               <li className="footer-item">About Us</li>
-//               <li className="footer-item">Join Us</li>
-//               <li className="footer-item">Media Kit</li>
-//               <li className="footer-item">Affiliate Program</li>
-//               <li className="footer-item">Whistleblower Contact</li>
-//               <li className="footer-item">Blog</li>
-//               <li className="footer-item">News & Announcements</li>
-//               <li className="footer-item">Referral</li>
-//               <li className="footer-item">Security</li>
-//             </ul>
-//           </Col>
-//           <Col md={2} className="footer-section">
-//             <h5 className="footer-heading">Products</h5>
-//             <ul className="footer-list">
-//               <li className="footer-item">Spot Trading</li>
-//               <li className="footer-item">Margin Trading</li>
-//               <li className="footer-item">Convert</li>
-//               <li className="footer-item">Futures Trading</li>
-//               <li className="footer-item">KuCoin Earn</li>
-//               <li className="footer-item">Crypto Lending</li>
-//               <li className="footer-item">Trading Bot</li>
-//               <li className="footer-item">Converter</li>
-//               <li className="footer-item">KuCoin Learn</li>
-//             </ul>
-//           </Col>
-//           <Col md={2} className="footer-section">
-//             <h5 className="footer-heading">Service</h5>
-//             <ul className="footer-list">
-//               <li className="footer-item">Help Center</li>
-//               <li className="footer-item">Submit a Ticket</li>
-//               <li className="footer-item">Fees & VIP</li>
-//               <li className="footer-item">Ticket Verification</li>
-//               <li className="footer-item">Technical Support</li>
-//               <li className="footer-item">Bug Bounty</li>
-//               <li className="footer-item">Beginner’s Guide</li>
-//               <li className="footer-item">Official Verification Center</li>
-//               <li className="footer-item">PoR (Proof of Reserves)</li>
-//               <li className="footer-item">Sitemap</li>
-//               <li className="footer-item">Delistings</li>
-//             </ul>
-//           </Col>
-//           <Col md={2} className="footer-section">
-//             <h5 className="footer-heading">Business</h5>
-//             <ul className="footer-list">
-//               <li className="footer-item">Token Listing</li>
-//               <li className="footer-item">KuCoin Labs</li>
-//               <li className="footer-item">KuCoin Ventures</li>
-//               <li className="footer-item">Spotlight Application</li>
-//               <li className="footer-item">P2P Merchant Application</li>
-//               <li className="footer-item">Safeguard Program</li>
-//             </ul>
-//           </Col>
-//           <Col md={2} className="footer-section">
-//             <h5 className="footer-heading">Legal</h5>
-//             <ul className="footer-list">
-//               <li className="footer-item">Terms of Use</li>
-//               <li className="footer-item">Privacy Policy</li>
-//               <li className="footer-item">Risk Disclosure Statement</li>
-//               <li className="footer-item">AML & CFT</li>
-//               <li className="footer-item">Special Treatment</li>
-//               <li className="footer-item">Law Enforcement Requests</li>
-//             </ul>
-//           </Col>
-//           <Col md={2} className="footer-section">
-//             <h5 className="footer-heading">Crypto Prices</h5>
-//             <ul className="footer-list">
-//               <li className="footer-item">Bitcoin (BTC) Price</li>
-//               <li className="footer-item">Ethereum (ETH) Price</li>
-//               <li className="footer-item">Ripple (XRP) Price</li>
-//               <li className="footer-item">KuCoin Token (KCS) Price</li>
-//               <li className="footer-item">More Prices</li>
-//             </ul>
-//           </Col>
-//         </Row>
-//         <Row className="pt-4">
-//           <Col md={2} className="footer-section">
-//             <h5 className="footer-heading">Learn</h5>
-//             <ul className="footer-list">
-//               <li className="footer-item">Buy Bitcoin</li>
-//               <li className="footer-item">Buy Ethereum</li>
-//               <li className="footer-item">Buy Solana</li>
-//               <li className="footer-item">Buy Pepe</li>
-//               <li className="footer-item">Buy Ondo</li>
-//               <li className="footer-item">Buy XRP</li>
-//               <li className="footer-item">Buy Monero</li>
-//               <li className="footer-item">Buy Notcoin</li>
-//               <li className="footer-item">Buy dogwhat</li>
-//               <li className="footer-item">Buy NEAR Protocol</li>
-//             </ul>
-//           </Col>
-//           <Col md={2} className="footer-section">
-//             <h5 className="footer-heading">Developer</h5>
-//             <ul className="footer-list">
-//               <li className="footer-item">API Documentation</li>
-//               <li className="footer-item">SDK</li>
-//               <li className="footer-item">Download Historical Data</li>
-//             </ul>
-//           </Col>
-//           <Col md={2} className="footer-section">
-//             <h5 className="footer-heading">App Download</h5>
-//             <ul className="footer-list">
-//               <li className="footer-item">Android Download</li>
-//               <li className="footer-item">iOS Download</li>
-//             </ul>
-//           </Col>
-//           <Col md={2} className="footer-section">
-//             <h5 className="footer-heading">Community</h5>
-//             <ul className="footer-list">
-//               <li className="footer-item"><i className="fab fa-twitter"></i></li>
-//               <li className="footer-item"><i className="fab fa-telegram"></i></li>
-//               <li className="footer-item"><i className="fab fa-youtube"></i></li>
-//               <li className="footer-item"><i className="fab fa-reddit"></i></li>
-//               <li className="footer-item"><i className="fab fa-linkedin"></i></li>
-//               <li className="footer-item"><i className="fab fa-instagram"></i></li>
-//               <li className="footer-item"><i className="fab fa-discord"></i></li>
-//             </ul>
-//           </Col>
-//           <Col md={2} className="footer-section">
-//             <h5 className="footer-heading">Partners</h5>
-//             <ul className="footer-list">
-//               <li className="footer-item">Halo Wallet</li>
-//             </ul>
-//           </Col>
-//         </Row>
-//       </Container>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
-
-
-
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import 'bootstrap/dist/css/bootstrap.min.css';
 import coinexLogo from '../Assests/Images/coinex.jpeg';
 import withoubg from '../Assests/Images/withoubg-removebg-preview.png';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import icon1 from '../Assests/Images/icon1.svg';
+import icon2 from '../Assests/Images/icon2.svg';
+import icon3 from '../Assests/Images/icon3.svg';
+import icon4 from '../Assests/Images/icon4.svg';
+import icon5 from '../Assests/Images/icon5.svg';
+import icon6 from '../Assests/Images/icon6.svg';
+import icon7 from '../Assests/Images/icon7.svg';
+import icon8 from '../Assests/Images/icon8.svg';
+import icon9 from '../Assests/Images/icon9.svg';
+import { siteName, siteLogo } from '../Config/Config';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <Container>
-        <div className="footer-title">
+        <div className="footer-title d-flex">
           <img src={withoubg} alt="" className='img-fluid' />
+          <p className='site-name'>{siteName}</p>
         </div>
         <Row>
           <Col md={2} className="footer-section">
@@ -278,24 +136,40 @@ const Footer = () => {
               <li className="footer-item"><Link to="/ios-download">iOS Download</Link></li>
             </ul>
           </Col>
+
           <Col md={2} className="footer-section">
             <h5 className="footer-heading">Community</h5>
-            <ul className="footer-list">
-              <li className="footer-item"><a href="https://twitter.com"><i className="fab fa-twitter"></i></a></li>
-              <li className="footer-item"><a href="https://telegram.org"><i className="fab fa-telegram"></i></a></li>
-              <li className="footer-item"><a href="https://youtube.com"><i className="fab fa-youtube"></i></a></li>
-              <li className="footer-item"><a href="https://reddit.com"><i className="fab fa-reddit"></i></a></li>
-              <li className="footer-item"><a href="https://linkedin.com"><i className="fab fa-linkedin"></i></a></li>
-              <li className="footer-item"><a href="https://instagram.com"><i className="fab fa-instagram"></i></a></li>
-              <li className="footer-item"><a href="https://discord.com"><i className="fab fa-discord"></i></a></li>
-            </ul>
+            <div className="community-main">
+              <div className="icon-row">
+                <img src={icon1} alt="icon1" className='footer-icon' />
+                <img src={icon2} alt="icon2" className='footer-icon' />
+                <img src={icon3} alt="icon3" className='footer-icon' />
+                <img src={icon4} alt="icon4" className='footer-icon' />
+                <img src={icon5} alt="icon5" className='footer-icon' />
+                <img src={icon6} alt="icon6" className='footer-icon' />
+                <img src={icon7} alt="icon7" className='footer-icon' />
+                <img src={icon8} alt="icon8" className='footer-icon' />
+                <img src={icon9} alt="icon9" className='footer-icon' />
+              </div>
+            </div>
           </Col>
-          <Col md={2} className="footer-section">
-            <h5 className="footer-heading">Partners</h5>
-            <ul className="footer-list">
-              <li className="footer-item">Halo Wallet</li>
-            </ul>
-          </Col>
+
+        </Row>
+        <Row>
+          <div className="coppyright">
+            <Col lg={6}>
+              <p>CopyRight © 2017 - 2024 {siteName}.com. All Rights Reserved.</p>
+            </Col>
+            <Col lg={6}>
+            <div className="coppy-des">
+            <p>
+                24h Volume1,590,996,269USDT
+              </p>
+
+            </div>
+  
+            </Col>
+          </div>
         </Row>
       </Container>
     </footer>
