@@ -26,6 +26,8 @@ import { Slider } from '@mui/material';
 import ImageSlider from '../Components/ImageSlider';
 import signupImg from '../Assests/Images/register-bg.03006533.svg';
 import ImageMarquee from '../Components/ImageMarquee';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 
 export default function Home() {
@@ -81,6 +83,13 @@ export default function Home() {
         });
     }, []);
 
+    // aos js start 
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+
+    }, [])
+    // aos js end 
+
     return (
         <>
             { /* ----------------- banner section start  ----------------- */}
@@ -90,7 +99,7 @@ export default function Home() {
                     <Container>
                         <Row>
                             <Col lg={6}>
-                                <div className="banner-sec">
+                                <div className="banner-sec"  data-aos="zoom-in">
                                     <div className="coinex-heading">
                                         <h1> Find the Next <br />
 
@@ -113,16 +122,16 @@ export default function Home() {
 
                             </Col>
                             <Col lg={6}>
-                                <div className="banner-sec-right">
+                                <div className="banner-sec-right" >
                                     <div className="banner-sec-right-img">
                                         <img src={bannerRightImg} alt="" />
                                     </div>
-                                    <div className="qr-code-sec">
+                                    <div className="qr-code-sec"  data-aos="zoom-in">
                                         <div className="qr-des-top">
                                             <p> Scan QR Code to Download App </p>
                                         </div>
                                         <div className="qr-code-scn">
-                                            <QRCodeSVG value="https://reactjs.org/" height="210" width="211" />,
+                                            <QRCodeSVG value="https://reactjs.org/" className='for-qr-code-img' />,
                                             <div className="home-site-logo">
                                                 <img src={siteLogo} alt="" />
                                             </div>
@@ -133,10 +142,10 @@ export default function Home() {
                                     </div>
                                 </div>
                             </Col>
-                            <div className="for-static-slider">
+                            <div className="for-static-slider"  >
                                 <Row>
-                                    <Col lg={3} md={6}>
-                                        <div className="s-slider-main b-left ">
+                                    <Col lg={3} sm={6} xs={6}>
+                                        <div className="s-slider-main b-left  " data-aos="fade-up">
                                             <div className="s-slider-heading">
                                                 <h2 id="count1">0</h2>
                                             </div>
@@ -145,8 +154,8 @@ export default function Home() {
                                             </div>
                                         </div>
                                     </Col>
-                                    <Col lg={3} md={6}>
-                                        <div className="s-slider-main">
+                                    <Col lg={3} sm={6} xs={6}>
+                                        <div className="s-slider-main" data-aos="fade-up">
                                             <div className="s-slider-heading">
                                                 <h2 id="count2">0</h2>
                                             </div>
@@ -156,7 +165,7 @@ export default function Home() {
                                             </div>
                                         </div>
                                     </Col>
-                                    <Col lg={3} md={6}>
+                                    <Col lg={3} sm={6} xs={6} data-aos="fade-up">
                                         <div className="s-slider-main">
                                             <div className="s-slider-heading">
                                                 <h2 id="count3">0</h2>
@@ -166,14 +175,14 @@ export default function Home() {
                                             </div>
                                         </div>
                                     </Col>
-                                    <Col lg={3} md={6}>
+                                    <Col lg={3} sm={6} xs={6} data-aos="fade-up">
                                         <div className="s-slider-main">
                                             <div className="s-slider-heading">
                                                 <h2 id="count4">0</h2>
                                             </div>
                                             <div className="s-slider-des">
                                                 <p>
-                                                24h Trading Volume</p>
+                                                    24h Trading Volume</p>
                                             </div>
                                         </div>
                                     </Col>
@@ -193,7 +202,7 @@ export default function Home() {
 
             <div className="market-section">
                 <Container>
-                    <div className="market-sec-heading">
+                    <div className="market-sec-heading" data-aos="fade-up">
                         <h1> Crypto Market Today </h1>
                         <Link> View all 700+ Coins <EastIcon /></Link>
                     </div>
@@ -232,7 +241,7 @@ export default function Home() {
                             <button className='ms-btn'>Subscribe  <EastIcon />  </button>
                         </div>
                     </div> */}
-                    <div className="market-time-sec">
+                    <div className="market-time-sec" data-aos="fade-up">
                         <div className="m-t-logo">
                             <div className="mt-img">
                                 <img src={time} alt="" className='img-fluid' />
@@ -269,7 +278,7 @@ export default function Home() {
                         </div>
                     </div>
                     <Row>
-                        <Col lg={4} md={6}>
+                        <Col lg={4} md={6} data-aos="fade-up">
 
                             <div className="market-table-lists">
                                 <div className="table-list-name">
@@ -399,7 +408,7 @@ export default function Home() {
                             </div>
 
                         </Col>
-                        <Col lg={4} md={6}>
+                        <Col lg={4} md={6} data-aos="fade-up">
 
                             <div className="market-table-lists">
                                 <div className="table-list-name">
@@ -529,7 +538,7 @@ export default function Home() {
                             </div>
 
                         </Col>
-                        <Col lg={4} md={6}>
+                        <Col lg={4} md={6} data-aos="fade-up">
 
                             <div className="market-table-lists">
                                 <div className="table-list-name">
@@ -673,11 +682,11 @@ export default function Home() {
                 <Container>
                     <Row>
                         <Col lg={4}>
-                            <div className="crypto-box">
+                            <div className="crypto-box" data-aos="fade-right">
                                 <img src={cryptoImg} alt="" className='img-fluid' />
                             </div>
                         </Col>
-                        <Col lg={8}>
+                        <Col lg={8} data-aos="fade-left">
                             <div className="crypto-box-content">
                                 <div className="crypto-box-heading">
                                     <h2> Try Our Crypto Exchage now </h2>
@@ -707,13 +716,13 @@ export default function Home() {
             <div className="product-service-section">
                 <Container>
                     <Row>
-                        <div className="pro-ser-heading">
+                        <div className="pro-ser-heading" data-aos="fade-up">
                             <h2> Explore {siteName} Products & Services</h2>
                         </div>
                         <div className="product-service-cards">
                             <Row>
                                 <Col xl={6}>
-                                    <div className="pro-ser-box">
+                                    <div className="pro-ser-box" data-aos="fade-right">
                                         <div className="pro-ser-heading">
                                             <h2> Spot Trading </h2>
                                             <EastIcon />
@@ -728,7 +737,7 @@ export default function Home() {
                                     </div>
                                 </Col>
                                 <Col xl={6}>
-                                    <div className="pro-ser-box">
+                                    <div className="pro-ser-box" data-aos="fade-left">
                                         <div className="pro-ser-heading">
                                             <h2> Buy Crypto  </h2>
                                             <EastIcon />
@@ -743,7 +752,7 @@ export default function Home() {
                                     </div>
                                 </Col>
                                 <Col xl={6}>
-                                    <div className="pro-ser-box">
+                                    <div className="pro-ser-box" data-aos="fade-right">
                                         <div className="pro-ser-heading">
                                             <h2> Crypto Derivative  </h2>
                                             <EastIcon />
@@ -758,7 +767,7 @@ export default function Home() {
                                     </div>
                                 </Col>
                                 <Col xl={6}>
-                                    <div className="pro-ser-box">
+                                    <div className="pro-ser-box" data-aos="fade-left">
                                         <div className="pro-ser-heading">
                                             <h2> {siteName} Earn  </h2>
                                             <EastIcon />
@@ -773,7 +782,7 @@ export default function Home() {
                                     </div>
                                 </Col>
                                 <Col xl={6}>
-                                    <div className="pro-ser-box">
+                                    <div className="pro-ser-box" data-aos="fade-right">
                                         <div className="pro-ser-heading">
                                             <h2> Trading Bot </h2>
                                             <EastIcon />
@@ -788,7 +797,7 @@ export default function Home() {
                                     </div>
                                 </Col>
                                 <Col xl={6}>
-                                    <div className="pro-ser-box">
+                                    <div className="pro-ser-box" data-aos="fade-left">
                                         <div className="pro-ser-heading">
                                             <h2> Margin Trading </h2>
                                             <EastIcon />
@@ -810,25 +819,23 @@ export default function Home() {
                 </Container>
 
             </div>
-            =
-
             { /* ----------------- Product service section end   ----------------- */}
 
             { /* ----------------- Safe and trusted section start    ----------------- */}
             <div className="safe-trusted-main-section">
                 <div className="safe-trusted">
                     <Container>
-                        <div className="safe-sec-heading">
+                        <div className="safe-sec-heading" data-aos="fade-up">
                             <h1>Your Safe and Trusted Crypto Exchange</h1>
                         </div>
-                        <div className="safe-learn-more">
-                            <button className='safe-learn-more'> Learn More </button>
+                        <div className="safe-learn-more" data-aos="fade-up" >
+                            <button className='safe-learn-more' > Learn More </button>
                         </div>
 
                         <Row>
                             <Col lg={3}>
 
-                                <div className="safe-cards">
+                                <div className="safe-cards" data-aos="fade-up">
                                     <div className="s-card">
                                         <div className="s-card-img">
                                             <img src={safe} alt="" className='img-fluid' />
@@ -845,7 +852,7 @@ export default function Home() {
                             </Col>
                             <Col lg={3}>
 
-                                <div className="safe-cards">
+                                <div className="safe-cards" data-aos="fade-up">
                                     <div className="s-card">
                                         <div className="s-card-img">
                                             <img src={security1} alt="" className='img-fluid' />
@@ -862,7 +869,7 @@ export default function Home() {
                             </Col>
                             <Col lg={3}>
 
-                                <div className="safe-cards">
+                                <div className="safe-cards" data-aos="fade-up">
                                     <div className="s-card">
                                         <div className="s-card-img">
                                             <img src={Security2} alt="" className='img-fluid' />
@@ -879,7 +886,7 @@ export default function Home() {
                             </Col>
                             <Col lg={3}>
 
-                                <div className="safe-cards">
+                                <div className="safe-cards" data-aos="fade-up">
                                     <div className="s-card">
                                         <div className="s-card-img">
                                             <img src={security3} alt="" className='img-fluid' />
@@ -907,7 +914,7 @@ export default function Home() {
             <div className="digital-investment">
                 <Container>
                     <Row>
-                        <Col lg={6}>
+                        <Col lg={6} data-aos="fade-right">
                             <div className="digttal-heading">
                                 <h2> Make Digital Investment with Ease.</h2>
                                 <p className='digital-des'>
@@ -943,7 +950,7 @@ export default function Home() {
 
 
                         </Col>
-                        <Col lg={6}>
+                        <Col lg={6} data-aos="fade-left">
                             <div className="rhs-digital-img">
                                 <img src={trading} alt="" className='img-fluid' />
 
@@ -1023,14 +1030,14 @@ export default function Home() {
             <div className="welcome-bonous-main">
                 <Container>
                     <Row>
-                        <Col lg={4}>
+                        <Col lg={4} data-aos="fade-right">
                             <div className="welcome-bonous-image">
                                 <img src={signupImg} alt="" />
                             </div>
 
                         </Col>
 
-                        <Col lg={8}>
+                        <Col lg={8} data-aos="fade-left">
                             <div className="wel-bonous-content">
                                 <div className="wel-bon-title">
                                     <h1> Register now and claim your welcome <br /> bonus right away!</h1>

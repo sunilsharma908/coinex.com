@@ -28,7 +28,7 @@ const Footer = () => {
           <p className='site-name'>{siteName}</p>
         </div>
         <Row>
-          <Col md={2} className="footer-section">
+          <Col xl={2} lg={3} md={4} sm={6} className="footer-section">
             <h5 className="footer-heading">Corporate</h5>
             <ul className="footer-list">
               <li className="footer-item"><Link to="/about-us">About Us</Link></li>
@@ -42,7 +42,7 @@ const Footer = () => {
               <li className="footer-item"><Link to="/security">Security</Link></li>
             </ul>
           </Col>
-          <Col md={2} className="footer-section">
+          <Col xl={2} lg={3} md={4} sm={6} className="footer-section">
             <h5 className="footer-heading">Products</h5>
             <ul className="footer-list">
               <li className="footer-item"><Link to="/spot-trading">Spot Trading</Link></li>
@@ -56,7 +56,7 @@ const Footer = () => {
               <li className="footer-item"><Link to="/kucoin-learn">KuCoin Learn</Link></li>
             </ul>
           </Col>
-          <Col md={2} className="footer-section">
+          <Col xl={2} lg={3} md={4} sm={6} className="footer-section">
             <h5 className="footer-heading">Service</h5>
             <ul className="footer-list">
               <li className="footer-item"><Link to="/help-center">Help Center</Link></li>
@@ -72,7 +72,7 @@ const Footer = () => {
               <li className="footer-item"><Link to="/delistings">Delistings</Link></li>
             </ul>
           </Col>
-          <Col md={2} className="footer-section">
+          <Col xl={2} lg={3} md={4} sm={6} className="footer-section">
             <h5 className="footer-heading">Business</h5>
             <ul className="footer-list">
               <li className="footer-item"><Link to="/token-listing">Token Listing</Link></li>
@@ -83,7 +83,7 @@ const Footer = () => {
               <li className="footer-item"><Link to="/safeguard-program">Safeguard Program</Link></li>
             </ul>
           </Col>
-          <Col md={2} className="footer-section">
+          <Col xl={2} lg={3} md={4} sm={6} className="footer-section">
             <h5 className="footer-heading">Legal</h5>
             <ul className="footer-list">
               <li className="footer-item"><Link to="/terms-of-use">Terms of Use</Link></li>
@@ -94,7 +94,7 @@ const Footer = () => {
               <li className="footer-item"><Link to="/law-enforcement-requests">Law Enforcement Requests</Link></li>
             </ul>
           </Col>
-          <Col md={2} className="footer-section">
+          <Col xl={2} lg={3} md={4} sm={6} className="footer-section">
             <h5 className="footer-heading">Crypto Prices</h5>
             <ul className="footer-list">
               <li className="footer-item"><Link to="/bitcoin-price">Bitcoin (BTC) Price</Link></li>
@@ -106,7 +106,7 @@ const Footer = () => {
           </Col>
         </Row>
         <Row className="pt-4">
-          <Col md={2} className="footer-section">
+          <Col xl={2} lg={3} md={4} sm={6} className="footer-section">
             <h5 className="footer-heading">Learn</h5>
             <ul className="footer-list">
               <li className="footer-item"><Link to="/buy-bitcoin">Buy Bitcoin</Link></li>
@@ -121,7 +121,7 @@ const Footer = () => {
               <li className="footer-item"><Link to="/buy-near-protocol">Buy NEAR Protocol</Link></li>
             </ul>
           </Col>
-          <Col md={2} className="footer-section">
+          <Col xl={2} lg={3} md={4} sm={6} className="footer-section">
             <h5 className="footer-heading">Developer</h5>
             <ul className="footer-list">
               <li className="footer-item"><Link to="/api-documentation">API Documentation</Link></li>
@@ -129,7 +129,7 @@ const Footer = () => {
               <li className="footer-item"><Link to="/download-historical-data">Download Historical Data</Link></li>
             </ul>
           </Col>
-          <Col md={2} className="footer-section">
+          <Col xl={2} lg={3} md={4} sm={6} className="footer-section">
             <h5 className="footer-heading">App Download</h5>
             <ul className="footer-list">
               <li className="footer-item"><Link to="/android-download">Android Download</Link></li>
@@ -137,7 +137,7 @@ const Footer = () => {
             </ul>
           </Col>
 
-          <Col md={2} className="footer-section">
+          <Col xl={2} lg={3} md={4} sm={6}  className="footer-section">
             <h5 className="footer-heading">Community</h5>
             <div className="community-main">
               <div className="icon-row">

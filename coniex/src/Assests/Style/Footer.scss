@@ -1,35 +1,42 @@
 .footer {
-    padding: 50px 0;
-    // background-color: #f8f9fa;
-    font-size: 14px;
-    .footer-title {
-        width: 60px;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 30px;
+  // padding: 50px 0;
+  // background-color: #f8f9fa;
+  font-size: 14px;
 
-        .site-name {
-          
-            font-size: 30px;
-            font-weight: 600;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 20px;
-          
-        }
+  .footer-title {
+    width: 60px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+
+    .site-name {
+
+      font-size: 30px;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px;
+
+    }
+  }
+
+  .footer-section {
+    margin-bottom: 1.5rem;
+
+    .footer-heading {
+      font-weight: bold;
+      margin-bottom: 1rem;
+      padding-top: 50px;
+
+      @media (max-width:576px) {
+        padding-top: 20px;
+        
+      }
     }
 
-    .footer-section {
-      margin-bottom: 1.5rem;
-      .footer-heading {
-        font-weight: bold;
-        margin-bottom: 1rem;
-        padding-top: 50px;
-      }
-    
     .footer-list {
       padding: 0;
       list-style: none;
@@ -47,7 +54,7 @@
         font-size: 14px;
         padding-top: 15px;
         transition: color 0.3s;
-    
+
         &::after {
           content: '';
           position: absolute;
@@ -60,10 +67,10 @@
           transform-origin: right;
           transition: transform 0.3s;
         }
-    
+
         &:hover {
           color: #6c757d;
-    
+
           &::after {
             transform: scaleX(1);
             transform-origin: left;
@@ -71,9 +78,10 @@
         }
       }
     }
-    
+
 
   }
+
   .community-main {
     .icon-row {
       .footer-icon {
@@ -81,17 +89,20 @@
       }
     }
   }
+
   .coppyright {
     padding: 10px 0;
-    border-top: 1px solid #999 ;
+    border-top: 1px solid #999;
     display: flex;
     justify-content: space-between;
-    p{
+
+    p {
       color: #6c757d;
       font-size: 17px;
     }
 
   }
+
   .coppy-des {
     p {
       display: flex;
@@ -100,12 +111,8 @@
 
     }
   }
+
+  @media (max-width:992px) {
+    padding: 0 20px;
+  }
 }
-  
-
-
-  
-
-
-
-  

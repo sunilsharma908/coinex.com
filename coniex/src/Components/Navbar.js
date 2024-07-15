@@ -17,6 +17,7 @@ import EastIcon from '@mui/icons-material/East';
 import p2p from '../Assests/Images/p2p.png';
 import fiaticon from '../Assests/Images/fiat-deposit.png';
 import thirdpartyimg from '../Assests/Images/third-party.png';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 // site name and logo from dyanmic 
 import { siteLogo, siteName } from '../Config/Config';
 const Header = () => {
@@ -68,12 +69,19 @@ const Header = () => {
               <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="end">
                 <Offcanvas.Header closeButton>
                   <Offcanvas.Title id="offcanvasNavbarLabel">
+                    <div className="offcanvas-search">
+                      <input type="search" placeholder='Search' className='form-control my-input' />
+                      <SearchIcon className='its-search-icon'/>
+                    </div>
                     <div className="for-signup-btn-offcanvas">
                       <button className='nav-signup-btn-offcav'> Login </button>
                       <button className='nav-signup-btn-offcav-s'>  Sign Up </button>
 
                     </div>
                   </Offcanvas.Title>
+
+                  {/* <button type="button" class="btn-close" aria-label="Close"> Close</button> */}
+                  
                 </Offcanvas.Header>
                 <Offcanvas.Body className='offcanvas-custom-body'>
                   <Nav className="flex-grow-1 pe-3">
@@ -83,8 +91,10 @@ const Header = () => {
                       onMouseEnter={() => handleMouseEnter('Buy Cropto')}
                       onMouseLeave={handleMouseLeave}
                       className='for-crypto-title   for-title'
+                      
                     >
-                      <div className="dro-main d-flex">
+ 
+                      <div className="dro-main ">
                         <div className="drop-first">
                           <NavDropdown.Item to="/buy-cropto1" as={NavLink}>
                             <div className="d-menu-link">
@@ -515,7 +525,7 @@ const Header = () => {
                       onMouseLeave={handleMouseLeave}
                       className='for-title'
                     >
-                      <div className="dro-main d-flex">
+                      <div className="dro-main">
                         <div className="drop-first">
                           <NavDropdown.Item to="/buy-cropto1" as={NavLink}>
                             <div className="d-menu-link">
@@ -668,7 +678,7 @@ const Header = () => {
                         </div>
                       </div>
                     </NavDropdown>
-                    <Nav.Link to="/" className='mx-lg-2 Navbar-link reward-link' as={NavLink}>Reward Hub</Nav.Link>
+                    <Nav.Link to="/" className=' Navbar-link reward-link' as={NavLink}>Reward Hub</Nav.Link>
 
                     <div className="search-bar">
                       <input type="search" placeholder='search ' className='input-search' />

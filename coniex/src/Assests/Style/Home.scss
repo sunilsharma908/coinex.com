@@ -12,7 +12,7 @@
     // background-image: url('../Images/bgIMG.png');
     background-position: center;
     background-size: cover;
-    padding: 270px 0 250px 0;
+    padding: 270px 0 180px 0;
     // background-color: #E3F9EE;
     background: linear-gradient(to bottom, #cff5e1, #F6FDFA);
     // background: linear-gradient(to bottom left, #D1F5DB, #ffffff);
@@ -24,9 +24,14 @@
             h1 {
                 font-size: 56px;
                 font-weight: 600;
+                z-index: 10;
 
                 @media (max-width:1440px) {
                     font-size: 50px;
+                }
+
+                @media (max-width:1300px) {
+                    font-size: 40px;
                 }
 
                 .spefic-content {
@@ -38,7 +43,7 @@
 
             .coinex-heading-des {
                 font-size: 22px;
-
+                color: #999;
             }
         }
 
@@ -113,18 +118,19 @@
                     transition: 0.5s all;
 
                 }
+
                 @media (max-width:1200px) {
                     right: 0;
                 }
 
             }
-          
+
 
         }
 
 
 
-    }
+    }   
 
     .for-static-slider {
         padding-top: 120px;
@@ -132,6 +138,10 @@
         .s-slider-main {
             // border-right: 2px solid var(--lightgray);
             border-right: 2px solid rgba(145, 145, 145, 0.28);
+
+            @media (max-width:420px) {
+                border: none ;
+            }
 
             .s-slider-heading {
 
@@ -147,7 +157,26 @@
                 }
             }
 
+            @media (max-width:420px) {
+
+                #count1,
+                #count2,
+                #count3,
+                #count4 {
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+
+                .s-slider-des {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+
+
+            }
         }
+
         .b-left {
             position: relative;
 
@@ -177,7 +206,8 @@
 
 
             img {
-                width: 1256px;
+                // width: 1256px;
+                width: 100%;
             }
         }
 
@@ -236,6 +266,12 @@
                     }
 
                 }
+
+                .for-qr-code-img {
+                    width: 210px;
+                    height: 210px;
+                }
+
             }
 
             @keyframes updown {
@@ -260,7 +296,7 @@
 }
 
 .market-section {
-    padding: 40px 0 ;
+    padding: 40px 0;
 
     .market-sec-heading {
         display: flex;
@@ -355,11 +391,9 @@
 
     .market-subscribe {
         .ms-btn {
-
             flex-shrink: 0;
-            -webkit-box-pack: center;
+            display: flex;
             justify-content: center;
-            -webkit-box-align: center;
             align-items: center;
             box-sizing: border-box;
             outline: none;
@@ -378,8 +412,17 @@
             line-height: 130%;
             border-radius: 32px;
             cursor: pointer;
+            transition: 0.3s all; // Shortened the transition duration to make the animation snappier
+
+            &:hover {
+                background-color: var(--lightgreen);
+                transform: scale(1.05); // Slightly enlarges the button
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); // Adds a shadow for depth effect
+                transition: 0.3s all; // Consistent transition duration
+            }
         }
     }
+
 
     .market-table-lists {
         padding: 32px 32px 24px;
@@ -552,6 +595,14 @@
                     background: rgb(29, 29, 29);
                     gap: 8px;
                     padding: 0px 18px 0px 22px;
+
+
+                    &:hover {
+                        background-color: var(--lightgreen);
+                        transform: scale(1.05); // Slightly enlarges the button
+                        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); // Adds a shadow for depth effect
+                        transition: 0.3s all; // Consistent transition duration
+                    }
                 }
 
             }
@@ -575,6 +626,7 @@
     .pro-ser-heading {
         h2 {
             text-align: center;
+            font-weight: 600;
         }
 
     }
@@ -584,7 +636,7 @@
 
 
         .pro-ser-box {
-            width: 580px;
+            width: 100%;
             // padding: 40px 40px 30px 40px;
             // padding: 35px;
             padding: 35px 35px 28px 35px;
@@ -619,6 +671,10 @@
                 transition: 0.5s all;
             }
 
+            @media (max-width:1200px) {
+                width: 100%;
+            }
+
         }
 
     }
@@ -628,7 +684,7 @@
 }
 
 .safe-trusted-main-section {
-    padding: 120px 0;
+    padding: 80px 0;
 
     .safe-trusted {
 
@@ -650,6 +706,15 @@
                 border-radius: 50px;
                 color: #fff;
                 margin-top: 10px;
+                border: none;
+                transition: 0.3s all; // Consistent transition duration
+
+                &:hover {
+                    background-color: var(--lightgreen);
+                    transform: scale(1.05); // Slightly enlarges the button
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); // Adds a shadow for depth effect
+                    transition: 0.3s all; // Consistent transition duration
+                }
 
 
 
@@ -688,9 +753,6 @@
 
     }
 }
-
-
-
 
 // digttal invesment section 
 .digital-investment {
@@ -751,6 +813,12 @@
         display: flex;
         gap: 20px;
         margin-top: 40px;
+    }
+
+    @media (max-width:992px) {
+        .rhs-digital-img {
+            padding-top: 40px;
+        }
     }
 }
 
@@ -889,12 +957,15 @@
     padding: 80px 0;
     background-color: #F7F9FC;
 
+
+
     .wel-bonous-content {
         padding-top: 30px;
 
         .wel-bon-title {
             h1 {
                 font-weight: 700;
+
             }
 
         }
@@ -922,26 +993,183 @@
                 justify-content: center;
                 gap: 10px;
                 border: none;
-                transition: 0.5s all;
+                transition: 0.3s all;
 
                 .east-icon {
                     font-size: 19px !important;
                 }
 
+
                 &:hover {
                     background-color: var(--lightgreen);
-                    border: none;
-                    transition: 0.5s all;
-                    opacity: 0.8;
-
+                    transform: scale(1.05); // Slightly enlarges the button
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); // Adds a shadow for depth effect
+                    transition: 0.3s all; // Consistent transition duration
                 }
             }
         }
     }
+
+    @media (max-width:992px) {
+
+        .welcome-bonous-image {
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+    }
+
 
 }
 
 // marquee section scss starts 
 .marquee-section {
     padding: 70px 0;
+}
+
+
+// media 1200px 
+
+@media (max-width:1200px) {
+    .banner-section-main-div {
+        .qr-code-sec {
+            right: 78px !important;
+            top: 220px !important;
+
+            .qr-code-scn {
+                .for-qr-code-img {
+                    width: 180px !important;
+                    height: 180px !important;
+
+
+                }
+
+            }
+
+
+        }
+
+        .banner-sec {
+            .coinex-heading {
+                h1 {
+                    font-size: 40px;
+                }
+            }
+        }
+
+        // .banner-sec-right {
+        //     .banner-sec-right-img {
+        //         width: 100%;
+        //     }
+
+
+        // }
+
+
+    }
+
+    .crypto-exchange-main {
+        .crypto-box-content {
+            .crypto-signup-box {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// 992px 
+
+@media (max-width:992px) {
+
+    // market section 
+    .market-section {
+
+        .market-time-sec {
+            display: block;
+        }
+
+    }
+
+    .m-t-logo {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .downgrading-clock {
+        margin-top: 12px;
+    }
+
+    .market-subscribe {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .crypto-exchange-main {
+
+        .crypto-box {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .crypto-box-content {
+            .crypto-signup-box {
+                width: 100%;
+            }
+
+            .crypto-box-heading {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .crypto-box-link {
+                text-align: center;
+            }
+        }
+    }
+
+    .welcome-bonous-main {
+        .welcome-bonous-image {
+            display: flex;
+            justify-content: center;
+        }
+
+        .wel-bonous-content {
+            .wel-bon-title {
+                h1 {
+                    text-align: center;
+                }
+            }
+
+            .wel-bon-des {
+                p {
+                    text-align: center;
+                }
+            }
+
+            .bonous-signup-btn {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+    }
+
+
+
 }
