@@ -19,9 +19,10 @@ html {
 p {
     font-family: Roboto, -apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei !important;
 }
+
 h1,
-h2 , 
-h3, 
+h2,
+h3,
 h4 {
     font-family: Roboto, -apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei !important;
 }
@@ -46,7 +47,7 @@ ul {
 
 
 
-@media(max-width:1400px) {
+@media(max-width:1600px) {
 
     html,
     body {
@@ -173,4 +174,18 @@ input.form-control.my-input {
 .d-m-img {
     width: 40px !important;
     height: 40px !important;
+}
+
+@media (max-width:450px) {
+    .for-none {
+        display: none;
+    }
+
+    .digital-media-app {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+
+
+    }
 }

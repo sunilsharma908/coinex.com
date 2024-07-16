@@ -137,7 +137,7 @@ const Footer = () => {
             </ul>
           </Col>
 
-          <Col xl={2} lg={3} md={4} sm={6}  className="footer-section">
+          <Col xl={2} lg={3} md={4} sm={6} className="footer-section">
             <h5 className="footer-heading">Community</h5>
             <div className="community-main">
               <div className="icon-row">
@@ -157,18 +157,22 @@ const Footer = () => {
         </Row>
         <Row>
           <div className="coppyright">
-            <Col lg={6}>
-              <p>CopyRight © 2017 - 2024 {siteName}.com. All Rights Reserved.</p>
-            </Col>
-            <Col lg={6}>
-            <div className="coppy-des">
-            <p>
-                24h Volume1,590,996,269USDT
-              </p>
+            <Row>
+              <Col lg={6}>
+                <p>CopyRight © 2017 - 2024 {siteName}.com. All Rights Reserved.</p>
+              </Col>
+              <Col lg={6}>
+                <div className="coppy-des">
+                  <p>
+                    24h Volume1,590,996,269USDT
+                  </p>
 
-            </div>
-  
-            </Col>
+                </div>
+
+              </Col>
+
+            </Row>
+
           </div>
         </Row>
       </Container>

@@ -99,7 +99,7 @@ export default function Home() {
                     <Container>
                         <Row>
                             <Col lg={6}>
-                                <div className="banner-sec"  data-aos="zoom-in">
+                                <div className="banner-sec" data-aos="zoom-in">
                                     <div className="coinex-heading">
                                         <h1> Find the Next <br />
 
@@ -126,7 +126,7 @@ export default function Home() {
                                     <div className="banner-sec-right-img">
                                         <img src={bannerRightImg} alt="" />
                                     </div>
-                                    <div className="qr-code-sec"  data-aos="zoom-in">
+                                    <div className="qr-code-sec" data-aos="zoom-in">
                                         <div className="qr-des-top">
                                             <p> Scan QR Code to Download App </p>
                                         </div>
@@ -833,70 +833,86 @@ export default function Home() {
                         </div>
 
                         <Row>
-                            <Col lg={3}>
+                            <Col xl={3} md={6}>
 
                                 <div className="safe-cards" data-aos="fade-up">
                                     <div className="s-card">
                                         <div className="s-card-img">
                                             <img src={safe} alt="" className='img-fluid' />
                                         </div>
-                                        <div className="s-card-tite">
-                                            <h5> Secure Asset Storage</h5>
+                                        <div className="for-box-img-content">
+                                            <div className="s-card-tite">
+                                                <h5> Secure Asset Storage</h5>
+                                            </div>
+                                            <div className="s-card-des">
+                                                <p> Our industry-leading encryption and storage systems ensure that your assets are always safe and secure.</p>
+                                            </div>
+
                                         </div>
-                                        <div className="s-card-des">
-                                            <p> Our industry-leading encryption and storage systems ensure that your assets are always safe and secure.</p>
-                                        </div>
+
                                     </div>
 
                                 </div>
                             </Col>
-                            <Col lg={3}>
+                            <Col xl={3} md={6}>
 
                                 <div className="safe-cards" data-aos="fade-up">
                                     <div className="s-card">
                                         <div className="s-card-img">
                                             <img src={security1} alt="" className='img-fluid' />
                                         </div>
-                                        <div className="s-card-tite">
-                                            <h5> Secure Asset Storage</h5>
+                                        <div className='for-box-img-content'>
+                                            <div className="s-card-tite">
+                                                <h5> Secure Asset Storage</h5>
+                                            </div>
+                                            <div className="s-card-des">
+                                                <p> Our industry-leading encryption and storage systems ensure that your assets are always safe and secure.</p>
+                                            </div>
+
                                         </div>
-                                        <div className="s-card-des">
-                                            <p> Our industry-leading encryption and storage systems ensure that your assets are always safe and secure.</p>
-                                        </div>
+
                                     </div>
 
                                 </div>
                             </Col>
-                            <Col lg={3}>
+                            <Col xl={3} md={6}>
 
                                 <div className="safe-cards" data-aos="fade-up">
                                     <div className="s-card">
                                         <div className="s-card-img">
                                             <img src={Security2} alt="" className='img-fluid' />
                                         </div>
-                                        <div className="s-card-tite">
-                                            <h5> Secure Asset Storage</h5>
+                                        <div className='for-box-img-content'>
+                                            <div className="s-card-tite">
+                                                <h5> Secure Asset Storage</h5>
+                                            </div>
+                                            <div className="s-card-des">
+                                                <p> Our industry-leading encryption and storage systems ensure that your assets are always safe and secure.</p>
+                                            </div>
+
                                         </div>
-                                        <div className="s-card-des">
-                                            <p> Our industry-leading encryption and storage systems ensure that your assets are always safe and secure.</p>
-                                        </div>
+
                                     </div>
 
                                 </div>
                             </Col>
-                            <Col lg={3}>
+                            <Col xl={3} md={6}>
 
                                 <div className="safe-cards" data-aos="fade-up">
                                     <div className="s-card">
                                         <div className="s-card-img">
                                             <img src={security3} alt="" className='img-fluid' />
                                         </div>
-                                        <div className="s-card-tite">
-                                            <h5> Secure Asset Storage</h5>
+                                        <div className='for-box-img-content'>
+                                            <div className="s-card-tite">
+                                                <h5> Secure Asset Storage</h5>
+                                            </div>
+                                            <div className="s-card-des">
+                                                <p> Our industry-leading encryption and storage systems ensure that your assets are always safe and secure.</p>
+                                            </div>
+
                                         </div>
-                                        <div className="s-card-des">
-                                            <p> Our industry-leading encryption and storage systems ensure that your assets are always safe and secure.</p>
-                                        </div>
+
                                     </div>
 
                                 </div>
@@ -914,7 +930,7 @@ export default function Home() {
             <div className="digital-investment">
                 <Container>
                     <Row>
-                        <Col lg={6} data-aos="fade-right">
+                        <Col lg={6} data-aos="fade-right" className='for-digital-col' >
                             <div className="digttal-heading">
                                 <h2> Make Digital Investment with Ease.</h2>
                                 <p className='digital-des'>
@@ -935,16 +951,16 @@ export default function Home() {
 
                             <div className="digital-media-app d-flex">
                                 <div className="d-app">
-                                    <p> <span> <img src={appstore} alt="" /> </span> App Store </p>
+                                    <p> <span> <img src={appstore} alt="" /> </span>  <span className='for-none'> App Store</span> </p>
                                 </div>
                                 <div className="d-app">
-                                    <p> <span> <img src={playstore} alt="" /> </span> Google play  </p>
+                                    <p> <span> <img src={playstore} alt="" /> </span> <span className='for-none'> Google play</span>   </p>
                                 </div>
                                 <div className="d-app">
-                                    <p> <span> <img src={android} alt="" /></span> APK </p>
+                                    <p> <span> <img src={android} alt="" /></span> <span className='for-none'> APK </span>  </p>
                                 </div>
                                 <div className="d-app">
-                                    <p> <span> <img src={api} alt="" /></span> API </p>
+                                    <p> <span> <img src={api} alt="" /></span> <span className='for-none'> API </span>   </p>
                                 </div>
                             </div>
 
@@ -1040,7 +1056,7 @@ export default function Home() {
                         <Col lg={8} data-aos="fade-left">
                             <div className="wel-bonous-content">
                                 <div className="wel-bon-title">
-                                    <h1> Register now and claim your welcome <br /> bonus right away!</h1>
+                                    <h1> Register now and claim your welcome  bonus right away!</h1>
                                 </div>
                                 <div className="wel-bon-des">
                                     <p> Still wondering where to start with your crypto journey?</p>

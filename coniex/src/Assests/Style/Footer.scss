@@ -115,4 +115,13 @@
   @media (max-width:992px) {
     padding: 0 20px;
   }
+  
+  .coppy-des {
+    p {
+      display: flex;
+      justify-content:start;
+      padding: 10px;
+
+    }
+  }
 }

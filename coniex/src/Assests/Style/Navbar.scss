@@ -245,6 +245,7 @@
 
     @media (max-width:1200px) {
         .dro-main {
+            border: none;
             
                 .d-menu-link {
                     display: flex;
@@ -264,6 +265,29 @@
         }
         .search-bar {
             display: none !important;
+        }
+        .navbar-nav .dropdown-menu {
+            position: static;
+            border: none;
+
+
+        }
+        .d-c-title {
+            p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .d-c-des {
+            p {
+                display: none;
+            }
+        }
+        .d-m-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
     

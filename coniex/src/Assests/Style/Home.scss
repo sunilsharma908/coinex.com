@@ -130,7 +130,7 @@
 
 
 
-    }   
+    }
 
     .for-static-slider {
         padding-top: 120px;
@@ -140,7 +140,7 @@
             border-right: 2px solid rgba(145, 145, 145, 0.28);
 
             @media (max-width:420px) {
-                border: none ;
+                border: none;
             }
 
             .s-slider-heading {
@@ -270,6 +270,12 @@
                 .for-qr-code-img {
                     width: 210px;
                     height: 210px;
+
+                    @media (max-width:1200px) {
+                        width: 180px;
+                        height: 180px;
+
+                    }
                 }
 
             }
@@ -289,6 +295,10 @@
             @media (max-width:1460px) {
                 padding: 5px 15px;
 
+            }
+
+            @media (max-width:1200px) {
+                padding: 5px 8px;
             }
         }
 
@@ -507,6 +517,7 @@
 .crypto-exchange-main {
     padding: 50px 0;
 
+
     .crypto-box {
         width: 288px;
         height: 341px;
@@ -693,11 +704,14 @@
 
             h1 {
                 text-align: center;
+                font-weight: 600
             }
         }
 
         .safe-learn-more {
             @include center();
+            margin-top: 15px;
+
 
             button {
 
@@ -727,6 +741,9 @@
 
 
             .s-card {
+                display: flex;
+                flex-direction: column;
+
                 .s-card-img {
 
                     @include center();
@@ -1030,45 +1047,139 @@
 }
 
 
-// media 1200px 
 
-@media (max-width:1200px) {
+
+//  media for 1400px 
+
+@media (max-width:1400px) {
     .banner-section-main-div {
-        .qr-code-sec {
-            right: 78px !important;
-            top: 220px !important;
+        .main-home {
 
-            .qr-code-scn {
+            .banner-sec {
+
+                .coinex-heading {
+                    h1 {
+                        font-size: 42px;
+                    }
+                }
+
+                .coinex-heading-des {
+
+                    font-size: 18px;
+                    margin-top: 10px;
+
+                }
+
+                .email-form {
+                    .input-field {
+                        input {
+                            width: 470px;
+                        }
+
+                        .sign-up-btn {
+                            padding: 0px 14px 0px 15px;
+                            right: 116px;
+
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        .banner-sec-right {
+
+            .banner-sec-right-img {
+                width: 1100px;
+            }
+
+            .qr-code-sec {
+                position: absolute;
+                right: 215px !important;
+                top: 126px !important;
+
                 .for-qr-code-img {
-                    width: 180px !important;
-                    height: 180px !important;
-
-
-                }
-
-            }
-
-
-        }
-
-        .banner-sec {
-            .coinex-heading {
-                h1 {
-                    font-size: 40px;
+                    width: 180px;
+                    height: 180px;
                 }
             }
+
         }
-
-        // .banner-sec-right {
-        //     .banner-sec-right-img {
-        //         width: 100%;
-        //     }
-
-
-        // }
-
 
     }
+
+
+
+
+
+}
+
+
+
+@media (max-width:1200px) {
+
+    .banner-section-main-div {
+        .main-home {
+
+            .banner-sec {
+
+                .coinex-heading {
+                    h1 {
+                        font-size: 36px;
+                    }
+                }
+
+                .coinex-heading-des {
+
+                    font-size: 18px;
+                    margin-top: 10px;
+
+                }
+
+                .email-form {
+                    .input-field {
+                        input {
+                            width: 470px;
+                        }
+
+                        .sign-up-btn {
+                            padding: 0px 14px 0px 15px;
+                            right: 8px;
+
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        .banner-sec-right {
+
+            .banner-sec-right-img {
+                width: 1100px;
+            }
+
+            .qr-code-sec {
+                position: absolute;
+                right: 215px !important;
+                top: 126px !important;
+
+                .for-qr-code-img {
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+
+        }
+
+    }
+
+
+
+
+
 
     .crypto-exchange-main {
         .crypto-box-content {
@@ -1077,8 +1188,94 @@
             }
         }
     }
+
+    .digital-investment {
+        .digttal-heading {
+            h2 {
+                font-size: 24px;
+            }
+
+            .digital-des {
+                font-size: 15px;
+            }
+        }
+
+        .digital-scan-code {
+            width: 420px;
+
+            .scanner-img {
+                img {
+                    width: 90px;
+                }
+            }
+        }
+    }
 }
 
+
+// media 1120px 
+
+@media (max-width:1120px) {
+
+
+    .banner-section-main-div {
+        .main-home {
+
+            .banner-sec {
+
+                .coinex-heading {
+                    h1 {
+                        font-size: 36px;
+                    }
+                }
+
+                .coinex-heading-des {
+
+                    font-size: 18px;
+                    margin-top: 10px;
+
+                }
+
+                .email-form {
+                    .input-field {
+                        input {
+                            width: 470px;
+                        }
+
+                        .sign-up-btn {
+                            padding: 0px 14px 0px 15px;
+
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        .banner-sec-right {
+
+            .banner-sec-right-img {
+                width: 980px;
+                top: 70px;
+            }
+
+            .qr-code-sec {
+                position: absolute;
+                right: 215px !important;
+                top: 126px !important;
+
+                .for-qr-code-img {
+                    width: 170px;
+                    height: 170px;
+                }
+            }
+
+        }
+
+    }
+
+}
 
 
 
@@ -1092,30 +1289,119 @@
 
 @media (max-width:992px) {
 
-    // market section 
-    .market-section {
+    // for 992px banner section 
+    .banner-section-main-div {
+        .main-home {
+            padding: 150px 0 80px 0;
 
-        .market-time-sec {
-            display: block;
+            .banner-sec {
+
+                .coinex-heading {
+                    h1 {
+                        font-size: 36px;
+                    }
+                }
+
+                .coinex-heading-des {
+
+                    font-size: 18px;
+                    margin-top: 10px;
+
+                }
+
+                .email-form {
+                    .input-field {
+                        input {
+                            width: 100%;
+                        }
+
+                        .sign-up-btn {
+                            padding: 0px 14px 0px 15px;
+
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        .banner-sec-right {
+
+            .banner-sec-right-img {
+                width: 669px;
+                top: 0px;
+            }
+
+            .qr-code-sec {
+                display: none;
+            }
+
         }
 
     }
 
-    .m-t-logo {
-        display: flex;
-        justify-content: center;
-
+    .for-static-slider {
+        padding-top: 70px !important;
     }
 
-    .downgrading-clock {
-        margin-top: 12px;
-    }
+    // market section 
+    .market-section {
+        .market-time-sec {
+            padding: 40px 5px;
 
-    .market-subscribe {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-top: 20px;
+            .m-t-logo {
+                display: flex;
+
+                gap: 10px;
+
+                .mt-img {
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+
+                .mt-logo-content {
+                    .mt-logo-top {
+                        h5 {
+                            font-size: 17px;
+                        }
+
+                        .market-listing-btn {
+                            padding: 1px 5px;
+                            margin-bottom: 7px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .mt-logo-bottom {
+                    h3 {
+                        font-size: 13px;
+                    }
+                }
+
+
+            }
+
+            .downgrading-clock {
+                .clock-d-main {
+                    gap: 10px;
+
+                    .d-time-box {
+                        padding: 14px;
+                    }
+                }
+            }
+
+            .market-subscribe {
+                .ms-btn {
+                    padding: 0px 16px 0px 16px;
+                }
+
+            }
+        }
     }
 
     .crypto-exchange-main {
@@ -1169,6 +1455,434 @@
         }
 
     }
+
+
+
+}
+
+
+// for less than 780px 
+
+@media (max-width:780px) {
+
+    .banner-section-main-div {
+
+        .main-home {
+            padding: 150px 0 80px 0;
+
+            .banner-sec {
+
+                .coinex-heading {
+                    h1 {
+                        font-size: 36px;
+                    }
+                }
+
+                .coinex-heading-des {
+
+                    font-size: 18px;
+                    margin-top: 10px;
+
+                }
+
+                .email-form {
+                    .input-field {
+                        input {
+                            width: 100%;
+                        }
+
+                        .sign-up-btn {
+                            padding: 0px 14px 0px 15px;
+
+                        }
+                    }
+                }
+
+            }
+
+            .for-static-slider {
+                .s-slider-main {
+                    border: none;
+                }
+
+                .b-left {
+                    &::before {
+                        display: none;
+                    }
+                }
+
+            }
+
+
+        }
+
+        .banner-sec-right {
+
+            .banner-sec-right-img {
+                display: none;
+            }
+
+            .qr-code-sec {
+                display: none;
+            }
+
+            .sign-up-btn {
+                position: static;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin-top: 15px;
+            }
+
+        }
+
+
+
+
+
+    }
+
+    .market-section {
+        .market-sec-heading {
+            h1 {
+                font-size: 21px;
+            }
+
+            a {
+                font-size: 16px;
+            }
+        }
+
+        .market-time-sec {
+            padding: 40px 5px;
+            display: block;
+
+
+            .m-t-logo {
+                display: flex;
+
+
+                gap: 10px;
+
+                .mt-img {
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+
+                .mt-logo-content {
+                    .mt-logo-top {
+                        h5 {
+                            font-size: 17px;
+                        }
+
+                        .market-listing-btn {
+                            padding: 1px 5px;
+                            margin-bottom: 7px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .mt-logo-bottom {
+                    h3 {
+                        font-size: 13px;
+                    }
+                }
+
+
+            }
+
+            .downgrading-clock {
+                .clock-d-main {
+                    gap: 10px;
+                    justify-content: start;
+                    padding-top: 20px;
+
+                    .d-time-box {
+                        padding: 14px;
+                    }
+                }
+            }
+
+            .market-subscribe {
+                padding-top: 20px;
+
+                .ms-btn {
+                    padding: 0px 16px 0px 16px;
+                    width: 100%;
+
+                }
+
+            }
+        }
+    }
+
+    .product-service-section {
+        .pro-ser-heading {
+            h2 {
+                font-size: 22px;
+            }
+        }
+
+        .product-service-cards {
+            .pro-ser-box {
+                padding: 30px 30px 30px 30px;
+
+                .pro-ser-heading {
+                    h2 {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+
+    .safe-trusted-main-section {
+        .safe-trusted {
+            .safe-cards {
+                .s-card {
+                    flex-direction: row;
+                    gap: 12px;
+
+                    .for-box-img-content {
+                        .s-card-tite {
+                            h5 {
+                                text-align: start;
+                            }
+                        }
+
+                        .s-card-des {
+                            p {
+                                text-align: left !important;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .digital-investment {}
+
+    .accordian-section {
+        .accordian-main {
+            .accordians {
+                .accordion {
+                    .accor-item {
+                        .accordion-header {
+                            button {
+                                font-size: 18px;
+
+                            }
+                        }
+
+                        .accordion-body {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+}
+
+// media max-width: 460px
+
+@media (max-width:576px) {
+    .crypto-exchange-main {
+        .crypto-box-content {
+            .crypto-signup-box {
+                .for-padding {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (max-width:450px) {
+
+
+    .banner-sec {
+
+        .coinex-heading {
+            h1 {
+                font-size: 36px;
+                text-align: center;
+            }
+            .coinex-heading-des {
+                p {
+                    text-align: center;
+                    
+                }
+            }
+
+            .coinex-heading-des {
+                p {
+                    text-align: center !important;
+                }
+            }
+      
+        }
+
+        .coinex-heading {
+            h1 {
+                font-size: 30px;
+            }
+        }
+
+        .coinex-heading-des {
+            margin-top: 10px;
+            font-size: 17px;
+
+        }
+
+        .email-form {
+            .input-field {
+                input {
+                    width: 100%;
+                    padding: 16px 25px 16px 25px;
+
+                }
+
+                .sign-up-btn {
+                    padding: 0 !important;
+                    // padding: 0px 14px 0px 15px; 
+                    position: static;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    margin-top: 15px;
+                    padding: 0px 12px 0px 22px;
+
+
+                }
+            }
+        }
+
+
+
+    }
+
+    .market-section {
+        .market-sec-heading {
+            display: block;
+
+        }
+
+        .market-table-lists {
+            margin-top: 30px;
+        }
+    }
+
+    .for-static-slider {
+        padding-top: 70px !important;
+    }
+
+    .crypto-exchange-main {
+        padding: 35px 0;
+
+        .crypto-box-content {
+            .crypto-box-heading {
+                h2 {
+                    font-size: 22px;
+                  
+                }
+
+                p {
+                    font-size: 14px;
+                }
+
+                a {
+                    font-size: 14px;
+                }
+            }
+
+            .crypto-signup-box {
+                padding: 40px 10px;
+
+                .for-padding {
+                    font-size: 14px;
+                }
+
+            }
+        }
+
+    }
+
+    .product-service-section {
+        .pro-ser-heading {
+            h2 {
+                font-size: 22px;
+            }
+        }
+
+        .product-service-cards {
+            .pro-ser-box {
+                padding: 30px 30px 30px 30px;
+
+                .pro-ser-heading {
+                    h2 {
+                        font-size: 22px;
+                    }
+
+                }
+
+                .pro-des-para {
+                    font-size: 14px;
+                }
+            }
+        }
+
+
+
+
+    }
+
+    .safe-trusted-main-section {
+        .safe-trusted {
+            .safe-cards {
+                .s-card {
+                    flex-direction: row;
+                    gap: 12px;
+
+                    .for-box-img-content {
+                        .s-card-tite {
+                            h5 {
+                                text-align: start;
+
+                            }
+                        }
+
+                        .s-card-des {
+                            p {
+                                text-align: left !important;
+                                font-size: 14px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
 
 
