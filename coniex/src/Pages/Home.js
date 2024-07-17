@@ -7,7 +7,6 @@ import { CountUp } from 'countup.js';
 import time from '../Assests/Images/time.png';
 import tableImg from '../Assests/Images/tableimg.png';
 import cryptoImg from '../Assests/Images/cryptoImg.png';
-import { Earbuds, East } from '@mui/icons-material';
 import { Link, NavLink } from 'react-router-dom';
 import { siteName, siteLogo } from '../Config/Config';
 import productImg from '../Assests/Images/productImg.png';
@@ -22,8 +21,6 @@ import playstore from '../Assests/Images/play-button (1).png'
 import api from '../Assests/Images/appstore.png';
 import android from '../Assests/Images/android.png';
 import Accordion from 'react-bootstrap/Accordion';
-import { Slider } from '@mui/material';
-import ImageSlider from '../Components/ImageSlider';
 import signupImg from '../Assests/Images/register-bg.03006533.svg';
 import ImageMarquee from '../Components/ImageMarquee';
 import Aos from 'aos';
@@ -192,10 +189,6 @@ export default function Home() {
                     </Container>
                 </div>
             </div>
-
-
-
-            {/* <ImageSlider/> */}
             { /* ----------------- banner  section end  ----------------- */}
 
             { /* ----------------- Market section start  ----------------- */}
@@ -206,41 +199,6 @@ export default function Home() {
                         <h1> Crypto Market Today </h1>
                         <Link> View all 700+ Coins <EastIcon /></Link>
                     </div>
-                    {/* <div className="market-time-sec">
-                        <div className="m-t-logo">
-                            <div className="mt-img">
-                                <img src={time} alt="" className='img-fluid' />
-                            </div>
-                            <div className="mt-logo-content">
-                                <div className="mt-logo-top">
-                                    <h5> XR</h5>
-                                    <span className='market-listing-btn' > New Listing </span>
-                                </div>
-                                <div className="mt-logo-bottom">
-                                    <h3> XRADERS </h3>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div className="downgrading-clock">
-                            <div className="clock-d-main">
-                                <div className="d-hour-box   d-time-box ">
-                                    25h
-                                </div>
-                                <div className="d-time-clock  d-time-box ">
-                                    04m :
-                                </div>
-                                <div className="d-sec-clock  d-time-box">
-                                    41s
-                                </div>
-                            </div>
-
-                        </div>
-                        <div className="market-subscribe">
-                            <button className='ms-btn'>Subscribe  <EastIcon />  </button>
-                        </div>
-                    </div> */}
                     <div className="market-time-sec" data-aos="fade-up">
                         <div className="m-t-logo">
                             <div className="mt-img">
@@ -948,23 +906,6 @@ export default function Home() {
                                 </div>
 
                             </div>
-
-                            {/* <div className="digital-media-app d-flex">
-                                <div className="d-app">
-
-                                    <p> <span> <img src={appstore} alt="" /> </span>  <span className='for-none'> App Store</span> </p>
-                                </div>
-                                <div className="d-app">
-                                    <p> <span> <img src={playstore} alt="" /> </span> <span className='for-none'> Google play</span>   </p>
-                                </div>
-                                <div className="d-app">
-                                    <p> <span> <img src={android} alt="" /></span> <span className='for-none'> APK </span>  </p>
-                                </div>
-                                <div className="d-app">
-                                    <p> <span> <img src={api} alt="" /></span> <span className='for-none'> API </span>   </p>
-                                </div>
-                            </div> */}
-
                             <div className="digital-media-app d-flex">
                                 <div className="d-app">
                                     <a href="your-appstore-link">
@@ -999,9 +940,6 @@ export default function Home() {
                                     </a>
                                 </div>
                             </div>
-
-
-
                         </Col>
                         <Col lg={6} data-aos="fade-left">
                             <div className="rhs-digital-img">
@@ -1108,6 +1046,8 @@ export default function Home() {
 
             </div>
             { /* ----------------- Welcome Bonous section ends      ----------------- */}
+
+
             { /* ----------------- Image Marquee starts       ----------------- */}
             <div className="marquee-section">
                 <Container fluid>
@@ -1117,18 +1057,6 @@ export default function Home() {
             </div>
 
             { /* ----------------- Image Marquee ends       ----------------- */}
-
-
-
-
-
-
-
-
-
-
-
-
         </>
     )
 }

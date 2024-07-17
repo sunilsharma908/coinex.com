@@ -1,6 +1,4 @@
 
-
-
 import React, { useState, useRef, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -19,9 +17,6 @@ import fiaticon from '../Assests/Images/fiat-deposit.png';
 import thirdpartyimg from '../Assests/Images/third-party.png';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import circleprogress from '../Assests/Images/preloadergif.gif';
-// import SearchIcon from '@mui/icons-material/Search';
-// import CircularProgress from '@mui/material/CircularProgress;
-// site name and logo from dyanmic 
 import { siteLogo, siteName } from '../Config/Config';
 const Header = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -557,16 +552,7 @@ const Header = () => {
 
                         </div>
                       </NavDropdown>
-                      {/* <NavDropdown
-            title="Web 3"
-            show={openDropdown === 'Web 3'}
-            onMouseEnter={() => handleMouseEnter('Web 3')}
-            onMouseLeave={handleMouseLeave}
-          >
-            <NavDropdown.Item to="/web3-1" as={NavLink}>Web 3 - 1</NavDropdown.Item>
-            <NavDropdown.Item to="/web3-2" as={NavLink}>Web 3 - 2</NavDropdown.Item>
-            <NavDropdown.Item to="/web3-3" as={NavLink}>Web 3 - 3</NavDropdown.Item>
-          </NavDropdown> */}
+
                       <NavDropdown
                         title="More"
                         show={openDropdown === 'More'}
@@ -729,13 +715,13 @@ const Header = () => {
                         </div>
                       </NavDropdown>
                       <Nav.Link to="/" className=' Navbar-link reward-link' as={NavLink}>Reward Hub</Nav.Link>
-
+                  
                       <div className="search-bar">
                         <input type="search" placeholder='search ' className='input-search' />
                         <SearchIcon className='search-icon' />
-                       
+
                       </div>
-                      
+
                     </Nav>
 
 
@@ -753,24 +739,17 @@ const Header = () => {
                   <div className="download-icon">
                     <DownloadIcon />
                   </div>
-
                   <div className="global-icon">
                     <PublicIcon />
                   </div>
-
                   <div className="usd-icony">
                     <button className='usd-icon'> USD </button>
                   </div>
                 </div>
                 <Navbar.Toggle aria-controls="offcanvasNavbar" onClick={handleToggleClick} />
-
-
               </div>
-
-
-
-
             </div>
+
           </div>
 
         </Navbar>
