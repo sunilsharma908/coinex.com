@@ -154,13 +154,14 @@
                 padding: 26px 10px;
                 border-radius: 20px;
             }
-
-            .reward-link {
-                color: var(--lightgreen);
-                background-color: var(--lightshade);
-                border-radius: 10px;
-            }
         }
+
+        .reward-link {
+            color: var(--lightgreen) !important;
+            background-color: var(--lightshade);
+            border-radius: 10px;
+        }
+        
     }
 
     .RHS {
@@ -234,7 +235,7 @@
             align-items: center;
             gap: 10px;
 
-            
+
 
             @media (max-width:1200px) {
                 display: none;
@@ -324,5 +325,5 @@
 
     }
 
-       
-    }
+
+}

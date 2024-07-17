@@ -64,6 +64,9 @@
                 padding-left: 20px;
                 padding-right: 220px;
                 border: none;
+                &::placeholder {
+                    padding: 0 !important;
+                }
 
                 &:focus {
                     border: none;

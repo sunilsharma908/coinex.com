@@ -733,7 +733,9 @@ const Header = () => {
                       <div className="search-bar">
                         <input type="search" placeholder='search ' className='input-search' />
                         <SearchIcon className='search-icon' />
+                       
                       </div>
+                      
                     </Nav>
 
 
