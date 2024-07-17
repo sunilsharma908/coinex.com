@@ -1,5 +1,3 @@
-
-
 .navbar {
     background-color: var(--white);
     padding: 10px 20px;
@@ -18,6 +16,7 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+
         @media (max-width:1200px) {
             width: auto;
 
@@ -27,96 +26,103 @@
             #offcanvasNavbarLabel {
                 .offcanvas-search {
                     position: relative;
+
                     .my-input {
                         border: none !important;
                         outline: none !important;
-              
+
                         padding: 12px !important;
-                        padding-left: 37px!important;
-    
-                    }
-    
-              
-                
+                        padding-left: 37px !important;
+
                     }
 
-            }
-           
-            }
-         
-            
-      
-
-            .navbar-nav {
-                // margin-left: 20px;
-                // padding: 0px 16px;
-            }
-            .market-link {
-                color: #000;
-                text-decoration: none;
-                font-weight: 500;
-                padding: 7px 2px 0 2px;
-            }
 
 
-            .search-bar {
-                display: flex;
-                align-items: center;
-                background-color: var(--lightgray);
-                width: 150px;
-                border-radius: 15px;
-                position: relative;
-                margin-left: 10px;
+                }
 
-                .input-search {
-                    width: 100%;
-                    padding: 4px;
-                    border-radius: 10px;
-                    box-shadow: none;
+            }
+
+        }
+
+
+
+
+        .navbar-nav {
+            // margin-left: 20px;
+            // padding: 0px 16px;
+        }
+
+        .market-link {
+            color: #000;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 7px 2px 0 2px;
+        }
+
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: var(--lightgray);
+            width: 150px;
+            border-radius: 15px;
+            position: relative;
+            margin-left: 10px;
+
+            .input-search {
+                width: 100%;
+                padding: 4px;
+                border-radius: 10px;
+                box-shadow: none;
+                border: none;
+                background: transparent;
+                text-align: center;
+                padding-left: 35px;
+                padding-right: 10px;
+
+                &:focus-visible {
                     border: none;
-                    background: transparent;
-                    text-align: center;
-                    padding-left: 35px;
-                    padding-right: 10px;
-
-                    &:focus-visible {
-                        border: none;
-                        box-shadow: none;
-                        outline: none;
-                    }
-
-
+                    box-shadow: none;
+                    outline: none;
                 }
 
-                .search-icon {
-                    position: absolute;
-                    left: 11px;
-                    top: 10px;
-                }
+
             }
-            .for-title {
-                color: var(--black);
-                font-weight: 600 !important;
-                .dro-main {
-                    display: flex;
-                    @media (max-width:1200px) { 
-                        display: block !important;
-                        
-                    }
-                
+
+            .search-icon {
+                position: absolute;
+                left: 11px;
+                top: 10px;
+            }
+        }
+
+        .for-title {
+            color: var(--black);
+            font-weight: 600 !important;
+
+            .dro-main {
+                display: flex;
+
+                @media (max-width:1200px) {
+                    display: block !important;
+
+                }
+
                 .d-menu-link {
                     display: flex !important;
                     gap: 10px;
 
-            
 
- 
+
+
                     padding: 5px 10px;
                     border-radius: 20px !important;
+
                     .d-m-img {
                         width: 40px;
                         height: 40px;
                     }
+
                     .d-m-content {
                         .d-c-title {
                             p {
@@ -124,8 +130,9 @@
                                 font-weight: 600;
                                 margin: 0;
                             }
-                          
+
                         }
+
                         .d-c-des {
                             p {
                                 font-size: 12px;
@@ -134,13 +141,15 @@
                         }
                     }
                 }
+
                 .dropdown-item {
                     border-radius: 20px;
                     padding-top: 10px;
 
                 }
-         
+
             }
+
             .dropdown-menu.show {
                 padding: 26px 10px;
                 border-radius: 20px;
@@ -148,146 +157,175 @@
 
             .reward-link {
                 color: var(--lightgreen);
-                background-color: var(--lightshade) ;
+                background-color: var(--lightshade);
                 border-radius: 10px;
-            } }
+            }
         }
+    }
 
-        .RHS {
-            .login-sigup {
-                display: flex;
-                align-items: center;
-                gap: 12px;
+    .RHS {
+        .login-sigup {
+            display: flex;
+            align-items: center;
+            gap: 12px;
 
-                .nav-login-btn {
-                    color: var(--black);
-                    text-decoration: none;
-                    font-size: 18px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    @media (max-width:420px) {
-                        display: none;
-                    }
-                }
-
-                .nav-signup-btn {
-                    width: unset;
-                    padding: 9px 20px;
-                    border-radius: 90px;
-                    font-weight: 700;
-                    font-size: 14px;
-                    line-height: 130%;
-                    text-align: center;
-                    color: var(--white);
-                    background: var(--black);
-                    text-decoration: none;
-                    transition: 0.5s all;
-
-
-                    &:hover {
-                        transition: 0.5s all;
-                        background-color: var(--lightgreen);
-                    }
-                }
-
-                .download-icon {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-
-            .usd-icony {
-
-                .usd-icon {
-               
-                    border: none;
-                    color: var(--black);
-                    font-weight: 600;
-                    font-size: 14px;
-                    padding: 10px 10px;
-                    border-radius: 20px;
-    
-
-
-
-
-                }
-
-            }
-
-            .rhs-icon {
+            .nav-login-btn {
+                color: var(--black);
+                text-decoration: none;
+                font-size: 18px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                gap: 10px;
 
-                @media (max-width:1200px) {
+                @media (max-width:420px) {
                     display: none;
                 }
             }
 
+            .nav-signup-btn {
+                width: unset;
+                padding: 9px 20px;
+                border-radius: 90px;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 130%;
+                text-align: center;
+                color: var(--white);
+                background: var(--black);
+                text-decoration: none;
+                transition: 0.5s all;
 
-        }
-    }
 
-
-
-
-
-    .coinex-logo-img {
-        width: 150px;
-        height: 50px;
-    }
-
-
-    @media (max-width:1200px) {
-        .dro-main {
-            border: none;
-            
-                .d-menu-link {
-                    display: flex;
-                    gap: 10px;
-
-                    P {
-                        margin: 0;
-                    }
-                    .d-m-img {
-                        img {
-                            height: 46px;
-                            width: 46px;
-                        }
-                    }
-                
+                &:hover {
+                    transition: 0.5s all;
+                    background-color: var(--lightgreen);
+                }
             }
-        }
-        .search-bar {
-            display: none !important;
-        }
-        .navbar-nav .dropdown-menu {
-            position: static;
-            border: none;
 
-
-        }
-        .d-c-title {
-            p {
+            .download-icon {
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
         }
-        .d-c-des {
-            p {
+
+        .usd-icony {
+
+            .usd-icon {
+
+                border: none;
+                color: var(--black);
+                font-weight: 600;
+                font-size: 14px;
+                padding: 10px 10px;
+                border-radius: 20px;
+
+
+
+
+
+            }
+
+        }
+
+        .rhs-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            @media (max-width:1200px) {
                 display: none;
             }
         }
-        .d-m-content {
+
+
+    }
+}
+
+
+
+
+
+.coinex-logo-img {
+    width: 150px;
+    height: 50px;
+}
+
+
+@media (max-width:1200px) {
+    .dro-main {
+        border: none;
+
+        .d-menu-link {
+            display: flex;
+            gap: 10px;
+
+            P {
+                margin: 0;
+            }
+
+            .d-m-img {
+                img {
+                    height: 46px;
+                    width: 46px;
+                }
+            }
+
+        }
+    }
+
+    .search-bar {
+        display: none !important;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: static;
+        border: none;
+
+
+    }
+
+    .d-c-title {
+        p {
             display: flex;
             justify-content: center;
             align-items: center;
         }
     }
-    
+
+    .d-c-des {
+        p {
+
+            display: none;
+        }
+    }
+
+    .d-m-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.offcanvas-custom-body {
+    .loading-spinner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        img {}
+
+
+    }
+    .navbar-toggler{
+        &:focus {
+            box-shadow: none !important;
+
+        }
+    }
+       
+    }

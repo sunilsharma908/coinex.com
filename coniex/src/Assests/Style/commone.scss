@@ -209,3 +209,36 @@ input.form-control.my-input {
 
       
 }
+
+.for-cusomize {
+    background-color: var(--lightgreen);
+    padding: 10px 20px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.offcanvas-header {
+    &.loading {
+      // Hide the default close button
+      .btn-close {
+        display: none;
+      }
+    }
+  }
+
+
+  .nav-item{
+    .dropdown-toggle{
+        &::after{
+            transform: rotateZ(0deg);
+            transition: all .3s ease;
+        }
+    }
+    &.show{
+        .dropdown-toggle{
+            &::after{
+                transform: rotateZ(-180deg);
+            }
+        }
+    }
+}

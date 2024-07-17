@@ -949,8 +949,9 @@ export default function Home() {
 
                             </div>
 
-                            <div className="digital-media-app d-flex">
+                            {/* <div className="digital-media-app d-flex">
                                 <div className="d-app">
+
                                     <p> <span> <img src={appstore} alt="" /> </span>  <span className='for-none'> App Store</span> </p>
                                 </div>
                                 <div className="d-app">
@@ -962,7 +963,43 @@ export default function Home() {
                                 <div className="d-app">
                                     <p> <span> <img src={api} alt="" /></span> <span className='for-none'> API </span>   </p>
                                 </div>
+                            </div> */}
+
+                            <div className="digital-media-app d-flex">
+                                <div className="d-app">
+                                    <a href="your-appstore-link">
+                                        <p>
+                                            <span> <img src={appstore} alt="" /> </span>
+                                            <span className='for-none'> App Store</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div className="d-app">
+                                    <a href="your-playstore-link">
+                                        <p>
+                                            <span> <img src={playstore} alt="" /> </span>
+                                            <span className='for-none'> Google play</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div className="d-app">
+                                    <a href="your-apk-link">
+                                        <p>
+                                            <span> <img src={android} alt="" /></span>
+                                            <span className='for-none'> APK </span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div className="d-app">
+                                    <a href="your-api-link">
+                                        <p>
+                                            <span> <img src={api} alt="" /></span>
+                                            <span className='for-none'> API </span>
+                                        </p>
+                                    </a>
+                                </div>
                             </div>
+
 
 
                         </Col>

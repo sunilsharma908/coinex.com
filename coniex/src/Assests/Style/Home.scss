@@ -830,6 +830,12 @@
         display: flex;
         gap: 20px;
         margin-top: 40px;
+        .d-app {
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
     }
 
     @media (max-width:992px) {
