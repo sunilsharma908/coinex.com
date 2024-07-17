@@ -47,6 +47,13 @@ const Header = () => {
     setOpenDropdown(dropdown);
   };
 
+  const handleClick = (dropdown) => {
+    if (openDropdown === dropdown) {
+      setOpenDropdown(null);
+    } else {
+      setOpenDropdown(dropdown);
+    }
+  };
   const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       setOpenDropdown(null);
@@ -90,28 +97,7 @@ const Header = () => {
           <div className="main-div-for-flex">
             <div className="LHS">
               <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="end">
-                <Offcanvas.Header closeButton  className={isLoading ? 'loading' : '' } >
-                  {/* <Offcanvas.Title id="offcanvasNavbarLabel">
-                    {isLoading ?
-                      <div className="offcanvas-search">
-                        <input type="search" placeholder='Search' className='form-control my-input'
-                          onChange={handleSearchChange} />
-                        <SearchIcon className='its-search-icon' />
-                      </div> : (
-                        <div className="for-signup-btn-offcanvas">
-                          <button className='nav-signup-btn-offcav'> Login </button>
-                          <button className='nav-signup-btn-offcav-s'>  Sign Up </button>
-                        </div>
-
-                      )
-
-
-                    }
-
-
-
-
-                  </Offcanvas.Title> */}
+                <Offcanvas.Header closeButton className={isLoading ? 'loading' : ''} >
                   <Offcanvas.Title id="offcanvasNavbarLabel">
                     <div className="offcanvas-search">
                       <input
@@ -145,11 +131,12 @@ const Header = () => {
                   ) : (
                     <Nav className="flex-grow-1 pe-3">
                       <NavDropdown
-                        title="Buy Cropto"
-                        show={openDropdown === 'Buy Cropto'}
-                        onMouseEnter={() => handleMouseEnter('Buy Cropto')}
+                        title="Buy Crypto"
+                        show={openDropdown === 'Buy Crypto'}
+                        onClick={() => handleClick('Buy Crypto')}
+                        onMouseEnter={() => handleMouseEnter('Buy Crypto')}
                         onMouseLeave={handleMouseLeave}
-                        className='for-crypto-title   for-title'
+                        className='for-crypto-title for-title'
 
                       >
 
@@ -311,6 +298,7 @@ const Header = () => {
                       <NavDropdown
                         title="Trades"
                         show={openDropdown === 'Trades'}
+                        onClick={() => handleClick('Trades')}
                         onMouseEnter={() => handleMouseEnter('Trades')}
                         onMouseLeave={handleMouseLeave}
                         className='for-title'
@@ -397,6 +385,7 @@ const Header = () => {
                       <NavDropdown
                         title="Derivative"
                         show={openDropdown === 'Derivative'}
+                        onClick={() => handleClick('Derivative')}
                         onMouseEnter={() => handleMouseEnter('Derivative')}
                         onMouseLeave={handleMouseLeave}
                         className='for-title'
@@ -484,6 +473,7 @@ const Header = () => {
                       <NavDropdown
                         title="Institution"
                         show={openDropdown === 'Institution'}
+                        onClick={() => handleClick('Institution')}
                         onMouseEnter={() => handleMouseEnter('Institution')}
                         onMouseLeave={handleMouseLeave}
                         className='for-title'
@@ -580,6 +570,7 @@ const Header = () => {
                       <NavDropdown
                         title="More"
                         show={openDropdown === 'More'}
+                        onClick={() => handleClick('More')}
                         onMouseEnter={() => handleMouseEnter('More')}
                         onMouseLeave={handleMouseLeave}
                         className='for-title'

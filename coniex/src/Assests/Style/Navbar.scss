@@ -234,6 +234,8 @@
             align-items: center;
             gap: 10px;
 
+            
+
             @media (max-width:1200px) {
                 display: none;
             }
@@ -321,11 +323,6 @@
 
 
     }
-    .navbar-toggler{
-        &:focus {
-            box-shadow: none !important;
 
-        }
-    }
        
     }
