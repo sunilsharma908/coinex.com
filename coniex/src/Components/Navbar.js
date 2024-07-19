@@ -1,6 +1,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
+import Dropdown from 'react-bootstrap/Dropdown';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
@@ -18,13 +19,21 @@ import thirdpartyimg from '../Assests/Images/third-party.png';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import circleprogress from '../Assests/Images/preloadergif.gif';
 import { siteLogo, siteName } from '../Config/Config';
+import LanguageModal from '../Components/LanguageModal'
 const Header = () => {
+
+
   const [openDropdown, setOpenDropdown] = useState(null);
   const timeoutRef = useRef(null);
+  const [isOpen, setIsOpen] = useState(false);
+
 
   const [searchText, setSearchText] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
 
 
   const handleSearchChange = (e) => {
@@ -715,7 +724,7 @@ const Header = () => {
                         </div>
                       </NavDropdown>
                       <Nav.Link to="/" className=' Navbar-link reward-link' as={NavLink}>Reward Hub</Nav.Link>
-                  
+
                       <div className="search-bar">
                         <input type="search" placeholder='search ' className='input-search' />
                         <SearchIcon className='search-icon' />
@@ -737,13 +746,34 @@ const Header = () => {
                 <NavLink to='signup' className='nav-signup-btn' > Sign Up </NavLink>
                 <div className="rhs-icon ">
                   <div className="download-icon">
-                    <DownloadIcon />
+                    <NavLink to="/">
+                      <DownloadIcon />
+                    </NavLink>
                   </div>
-                  <div className="global-icon">
-                    <PublicIcon />
-                  </div>
+                  {/* <div className="global-icon">
+                    <NavLink onClick={toggleDropdown}>
+                      <PublicIcon />
+                    </NavLink
+                  </div> */}
+
+                  <Dropdown>
+                    <div className="global-icon">
+                      <NavLink onClick={toggleDropdown}>
+                        <PublicIcon />
+                      </NavLink>
+                    </div>
+
+
+                    <Dropdown.Menu>
+                      <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                      <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
                   <div className="usd-icony">
-                    <button className='usd-icon'> USD </button>
+                    <NavLink>
+                      <button className='usd-icon'> USD </button>
+                    </NavLink>
                   </div>
                 </div>
                 <Navbar.Toggle aria-controls="offcanvasNavbar" onClick={handleToggleClick} />

@@ -22,11 +22,26 @@
   .logo-item:hover {
     animation-play-state: paused;
   }
-  
-  .logo-item img {
-    height: 100%; // Adjust height as needed
-    cursor: pointer;
+
+  .logo-list:hover {
+    animation-play-state: paused;
   }
+  
+  
+  .logo-item  { 
+    img {
+      height: 100%; // Adjust height as needed
+      cursor: pointer;
+      opacity: 0.8;
+
+      &:hover {
+        opacity: 1 !important;
+      }
+
+    }
+
+  }
+
   
   @keyframes scroll {
     0% {
@@ -36,4 +51,43 @@
       transform: translateX(-50%);
     }
   }
+  
+
+
+  // .marquee-container {
+  //   overflow: hidden;
+  //   white-space: nowrap;
+  //   box-sizing: border-box;
+  //   width: 100%;
+  // }
+  
+  // .logo-list {
+  //   display: flex;
+  //   justify-content: space-around;
+  //   align-items: center;
+  //   animation: marquee 20s linear infinite;
+  //   width: 200%; // Double the width for a continuous loop
+  // }
+  
+  // .logo-item {
+  //   padding: 0 10px; // Adjust padding as needed
+  // }
+  
+  // .logo-item img {
+  //   width: 100px; // Adjust the size of the images
+  //   transition: animation-play-state 0.3s ease-in-out;
+  // }
+  
+  // .logo-list:hover {
+  //   animation-play-state: paused;
+  // }
+  
+  // @keyframes marquee {
+  //   0% {
+  //     transform: translateX(0);
+  //   }
+  //   100% {
+  //     transform: translateX(-50%);
+  //   }
+  // }
   

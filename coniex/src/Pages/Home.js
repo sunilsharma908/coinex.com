@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, } from 'react-bootstrap'
 import EastIcon from '@mui/icons-material/East';
-import bannerRightImg from '../Assests/Images/bgIMG.png'
+import bannerRightImg from '../Assests/Images/bgIMG11.png'
 import { QRCodeSVG } from 'qrcode.react';
 import { CountUp } from 'countup.js';
 import time from '../Assests/Images/time.png';
@@ -12,7 +12,7 @@ import { siteName, siteLogo } from '../Config/Config';
 import productImg from '../Assests/Images/productImg.png';
 import safe from '../Assests/Images/safe.png';
 import security1 from '../Assests/Images/security.png';
-import Security2 from '../Assests/Images/setupbox.png';
+import Security2 from '../Assests/Images/security.png';
 import security3 from '../Assests/Images/box.png'
 import trading from '../Assests/Images/trading.png';
 import qrcode from '../Assests/Images/qr code.png';
@@ -173,7 +173,7 @@ export default function Home() {
                                         </div>
                                     </Col>
                                     <Col lg={3} sm={6} xs={6} data-aos="fade-up">
-                                        <div className="s-slider-main">
+                                        <div className="s-slider-main for-b-none">
                                             <div className="s-slider-heading">
                                                 <h2 id="count4">0</h2>
                                             </div>
@@ -680,7 +680,7 @@ export default function Home() {
                         <div className="product-service-cards">
                             <Row>
                                 <Col xl={6}>
-                                    <div className="pro-ser-box" data-aos="fade-right">
+                                    <div className="pro-ser-box" data-aos="fade-up">
                                         <div className="pro-ser-heading">
                                             <h2> Spot Trading </h2>
                                             <EastIcon />
@@ -695,7 +695,7 @@ export default function Home() {
                                     </div>
                                 </Col>
                                 <Col xl={6}>
-                                    <div className="pro-ser-box" data-aos="fade-left">
+                                    <div className="pro-ser-box" data-aos="fade-up">
                                         <div className="pro-ser-heading">
                                             <h2> Buy Crypto  </h2>
                                             <EastIcon />
@@ -710,7 +710,7 @@ export default function Home() {
                                     </div>
                                 </Col>
                                 <Col xl={6}>
-                                    <div className="pro-ser-box" data-aos="fade-right">
+                                    <div className="pro-ser-box" data-aos="fade-up">
                                         <div className="pro-ser-heading">
                                             <h2> Crypto Derivative  </h2>
                                             <EastIcon />
@@ -725,7 +725,7 @@ export default function Home() {
                                     </div>
                                 </Col>
                                 <Col xl={6}>
-                                    <div className="pro-ser-box" data-aos="fade-left">
+                                    <div className="pro-ser-box"data-aos="fade-up">
                                         <div className="pro-ser-heading">
                                             <h2> {siteName} Earn  </h2>
                                             <EastIcon />
@@ -740,7 +740,7 @@ export default function Home() {
                                     </div>
                                 </Col>
                                 <Col xl={6}>
-                                    <div className="pro-ser-box" data-aos="fade-right">
+                                    <div className="pro-ser-box" data-aos="fade-up">
                                         <div className="pro-ser-heading">
                                             <h2> Trading Bot </h2>
                                             <EastIcon />
@@ -755,7 +755,7 @@ export default function Home() {
                                     </div>
                                 </Col>
                                 <Col xl={6}>
-                                    <div className="pro-ser-box" data-aos="fade-left">
+                                    <div className="pro-ser-box" data-aos="fade-up">
                                         <div className="pro-ser-heading">
                                             <h2> Margin Trading </h2>
                                             <EastIcon />
@@ -787,7 +787,7 @@ export default function Home() {
                             <h1>Your Safe and Trusted Crypto Exchange</h1>
                         </div>
                         <div className="safe-learn-more" data-aos="fade-up" >
-                            <button className='safe-learn-more' > Learn More </button>
+                            <button className='safe-learn-more' > Learn More  <EastIcon className='learn-more-east' /> </button>
                         </div>
 
                         <Row>
